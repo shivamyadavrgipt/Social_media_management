@@ -1,0 +1,37 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    background-color: #282c34; /* Darker background */
+    padding: 1rem;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretch the navbar across the entire screen */
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  .navbar a {
+    color: #61dafb; /* Light blue text */
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #21a1f1; /* Slightly brighter on hover */
+  }
+  
+  .navbar a.active {
+    color: #ffffff; /* White color for active link */
+    border-bottom: 2px solid #61dafb;
+  }
+  
+  /* Add some margin to push content below the navbar */
+  .body-content {
+    margin-top: 80px; /* Adjust this based on the height of your navbar */
+  }
+  
