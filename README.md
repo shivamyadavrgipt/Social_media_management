@@ -23,16 +23,17 @@ Social Media Management Account Frontend
 Welcome to the Social Media Management Account Frontend! This is a React application styled with Tailwind CSS for managing multiple social media accounts. The application is designed to simplify social media management by providing an intuitive interface.
 
 🌐 Live Demo
-Check out the live deployment here: Your Deployed Link
-
+Check out the live deployment here: https://heroic-blini-c25c81.netlify.app/
 ✨ Features
 📱 Responsive UI - Optimized for both desktop and mobile devices using Tailwind CSS.
 🚀 Fast and Lightweight - Built with React and Tailwind for a minimal and optimized experience.
 🔄 Social Media Integration (Planned) - Manage multiple social media platforms from one interface.
+
 🛠️ Tech Stack
 Frontend Framework: React (with hooks and functional components)
 Styling: Tailwind CSS
 Deployment: Netlify/Vercel or similar
+
 📁 Project Structure
 bash
 Copy code
@@ -89,6 +90,7 @@ Deploy the project:
 bash
 Copy code
 vercel
+
 🖌️ Contributing
 We welcome contributions! Here's how you can help:
 
