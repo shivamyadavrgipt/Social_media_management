@@ -14,20 +14,6 @@ Frontend Framework: React (with hooks and functional components)
 Styling: Tailwind CSS
 Deployment: Netlify/Vercel or similar
 
-📁 Project Structure
-bash
-Copy code
-├── public/          # Static assets
-├── src/
-│   ├── components/  # React components
-│   ├── pages/       # Page components (Dashboard, Settings, etc.)
-│   ├── assets/      # Images, fonts, etc.
-│   ├── App.js       # Main component
-│   ├── index.js     # Entry point
-├── tailwind.config.js  # Tailwind configuration
-├── package.json     # Dependencies and scripts
-├── README.md        # Project documentation
-└── ...             # Other files and configurations
 🚀 Getting Started
 To get a local copy up and running, follow these steps.
 
