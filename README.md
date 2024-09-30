@@ -55,6 +55,6 @@ This project is open-source under the MIT License. Feel free to use, modify, and
 - 📊 Analytics Dashboard: Display user analytics and engagement data.
 - 🖼️ Media Upload: Allow users to upload media directly to their accounts.
 -👨‍💻 Authors
-* Your Name – Shivam Yadav
+# Shivam Yadav
 🙏 Acknowledgments
 Thanks to the open-source community and contributors for your support and collaboration!
