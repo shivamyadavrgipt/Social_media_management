@@ -10,9 +10,9 @@ Check out the live deployment here: https://heroic-blini-c25c81.netlify.app/
 - 🔄 Social Media Integration (Planned) - Manage multiple social media platforms from one interface.
 
 🛠️ Tech Stack
-Frontend Framework: React (with hooks and functional components)
-Styling: Tailwind CSS
-Deployment: Netlify/Vercel or similar
+* Frontend Framework: React (with hooks and functional components)
+* Styling: Tailwind CSS
+* Deployment: Netlify/Vercel or similar
 
 🚀 Getting Started
 To get a local copy up and running, follow these steps.
@@ -51,10 +51,10 @@ Please follow our Contributing Guidelines (if available) and make sure your chan
 This project is open-source under the MIT License. Feel free to use, modify, and distribute this project.
 
 # 💡 Roadmap
-🔌 API Integration: Connect to backend APIs for managing social media posts and scheduling.
-📊 Analytics Dashboard: Display user analytics and engagement data.
-🖼️ Media Upload: Allow users to upload media directly to their accounts.
-👨‍💻 Authors
-Your Name – Shivam Yadav
+- 🔌 API Integration: Connect to backend APIs for managing social media posts and scheduling.
+- 📊 Analytics Dashboard: Display user analytics and engagement data.
+- 🖼️ Media Upload: Allow users to upload media directly to their accounts.
+-👨‍💻 Authors
+* Your Name – Shivam Yadav
 🙏 Acknowledgments
 Thanks to the open-source community and contributors for your support and collaboration!
