@@ -5,9 +5,9 @@ Welcome to the Social Media Management Account Frontend! This is a React applica
 # 🌐 Live Demo
 Check out the live deployment here: https://heroic-blini-c25c81.netlify.app/
 # ✨ Features
-📱 Responsive UI - Optimized for both desktop and mobile devices using Tailwind CSS.
-🚀 Fast and Lightweight - Built with React and Tailwind for a minimal and optimized experience.
-🔄 Social Media Integration (Planned) - Manage multiple social media platforms from one interface.
+- 📱 Responsive UI - Optimized for both desktop and mobile devices using Tailwind CSS.
+- 🚀 Fast and Lightweight - Built with React and Tailwind for a minimal and optimized experience.
+- 🔄 Social Media Integration (Planned) - Manage multiple social media platforms from one interface.
 
 🛠️ Tech Stack
 Frontend Framework: React (with hooks and functional components)
