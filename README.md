@@ -7,8 +7,8 @@ Here is example how it looks
 
 
 Tech Stack =>
- React
- Tailwind
+ React,
+ Tailwind,
  CSS
 
 
