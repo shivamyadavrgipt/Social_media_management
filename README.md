@@ -6,7 +6,7 @@ Here is example how it looks
 
 
 
-Tech Stack 
+Tech Stack =>
  React
  Tailwind
  CSS
