@@ -20,32 +20,32 @@ To get a local copy up and running, follow these steps.
 # Prerequisites
 Make sure you have the following installed on your machine:
 
-Node.js (version 14.x or above)
-npm
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/shivamyadavrgipt/social-media-management-frontend.git
-Navigate to the project directory:
-bash
-Copy code
-cd social-media-management-frontend
-Install the dependencies:
-bash
-Copy code
-npm install
+- Node.js (version 14.x or above)
+- npm
+- Installation
+- Clone the repository:
+- bash
+- Copy code
+- git clone https://github.com/shivamyadavrgipt/Social_media_management
+- Navigate to the project directory:
+- bash
+- Copy code
+- cd Social_media_management
+- Install the dependencies:
+- bash
+- Copy code
+-npm install
 
 # 🖌️ Contributing
 We welcome contributions! Here's how you can help:
 
-Fork the repository.
-Create a new branch: git checkout -b feature-branch-name.
-Make your changes.
-Commit your changes: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature-branch-name.
-Create a pull request.
-Please follow our Contributing Guidelines (if available) and make sure your changes adhere to the project's coding standards.
+- Fork the repository.
+- Create a new branch: git checkout -b feature-branch-name.
+- Make your changes.
+- Commit your changes: git commit -m 'Add some feature'.
+- Push to the branch: git push origin feature-branch-name.
+- Create a pull request.
+- Please follow our Contributing Guidelines (if available) and make sure your changes adhere to the project's coding standards.
 
 # 📝 License
 This project is open-source under the MIT License. Feel free to use, modify, and distribute this project.
