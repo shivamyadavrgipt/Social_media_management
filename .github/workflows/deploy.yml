@@ -1,0 +1,28 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main  # Replace 'main' with the branch you want to deploy from
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install  # Adjust this based on your package manager
+
+      - name: Build the project
+        run: npm run build  # Adjust based on your project's build process
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.3.3
+        with:
+          publish-dir: ./build  # Adjust this to the directory of your build output (e.g., dist for Vue.js)
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
