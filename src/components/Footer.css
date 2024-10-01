@@ -1,0 +1,13 @@
+footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    background-color: #45496d;
+    position: fixed;
+    bottom: 0;
+    height: 8vh;
+    width: 100vw;
+    
+    
+ }
