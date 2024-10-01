@@ -6,12 +6,14 @@ import Posts from "./pages/Posts";
 import Analytics from "./pages/Analytics";
 import Settings from "./pages/Settings";
 import Navbar from "./components/Navbar";
+import './App.css'
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <div className="body-content">
+      <div className="body-content"> 
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/posts" element={<Posts />} />
@@ -19,6 +21,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }

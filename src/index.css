@@ -1,23 +1,22 @@
 /* index.css */
-body {
-  margin: 0;
+*{
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #3a3838; /* Dark background */
-  color: #e0e0e0; /* Light text */
+  margin: 0;
+}
+body {
+  /* margin: 1rem; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #fde8e9; /* Dark background */
+  color: #47799c; /* Light text */
+  font-size: large;
 }
 
 h1 {
-  color: #edc8c8; /* White color for headings */
+  color: #4f517d; /* White color for headings */
+}
+p{
+  margin-top: 0.5rem;
+  font-size: larger;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
-.body-content {
-  margin-top: 80px; /* Space for the fixed navbar */
-}
