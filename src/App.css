@@ -1,3 +1,6 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
 .body-content {
     margin-top: 80px; /* Space for the fixed navbar */
     margin-left: 1.5rem;

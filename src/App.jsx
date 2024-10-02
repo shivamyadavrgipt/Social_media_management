@@ -8,7 +8,7 @@ import Settings from "./pages/Settings";
 import Navbar from "./components/Navbar";
 import './App.css'
 import Footer from "./components/Footer";
-import Settings from './pages/Settings'; // Ensure this path is correct
+ // Ensure this path is correct
 
 
 function App() {
