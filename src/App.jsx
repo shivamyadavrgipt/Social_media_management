@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Posts from "./pages/Posts";
 import Analytics from "./pages/Analytics";
-import Settings from "./pages/Settings";
 import Navbar from "./components/Navbar";
 import './App.css'
 import Footer from "./components/Footer";
