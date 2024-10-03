@@ -11,7 +11,7 @@ import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Footer from "./components/Footer";
-import Settings from "./pages/Settings"; // Ensure this path is correct
+import Setting from "./pages/Setting"; // Ensure this path is correct
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/analytics" element={<Analytics />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/settings" element={<Setting />} />
         </Routes>
       </div>
       <Footer />
