@@ -7,10 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-vite-project
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Local environment files
 *.local
 
 # Editor directories and files
@@ -23,3 +27,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Optional: Ignore env files (if not using in production)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
