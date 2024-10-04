@@ -6,7 +6,7 @@ import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
 import './App.css';
 import Footer from "./components/Footer";
-import Settings from "./pages/Settings";
+
 
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/analytics" element={<Analytics />} />
-          <Route path="/settings" element={<Settings />} />  {/* Use Settings component */}
         </Routes>
       </div>
       <Footer />
