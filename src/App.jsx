@@ -6,7 +6,8 @@ import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
 import './App.css';
 import Footer from "./components/Footer";
-import Settings from "./pages/Settings";  // Import the Settings component
+import Settings from "./pages/Settings";
+
 
 function App() {
   return (
