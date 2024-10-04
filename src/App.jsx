@@ -1,14 +1,12 @@
-// App.jsx
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Posts from "./pages/Posts";
 import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
-import './App.css'
+import './App.css';
 import Footer from "./components/Footer";
-import Settings from './pages/Settings'; // Ensure this path is correct
-
+import Settings from "./pages/Settings";  // Import the Settings component
 
 function App() {
   return (
@@ -19,15 +17,16 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/analytics" element={<Analytics />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/settings" element={<Settings />} />  {/* Use Settings component */}
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
 
 export default App;
+
 
 
 <div align="center">
