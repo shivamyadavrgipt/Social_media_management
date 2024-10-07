@@ -115,4 +115,23 @@ footer{
       bottom: 15px;
     }
   }
-  
+  .faq-modal-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Make the background semi-transparent */
+    padding: 20px;
+    border-radius: 12px;
+    width: 25%; /* Cover 1/4th of the screen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    right: 0; /* Align it to the right */
+    top: 0;
+    margin: 0;
+}
+
+.faq-modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Make the overall modal background a bit more transparent */
+    display: flex;
+    justify-content: flex-end; /* Align the modal content to the right */
+    align-items: center;
+}
