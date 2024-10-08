@@ -1,20 +1,29 @@
-footer{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: azure;
-    background-color: #45496d;
-    position: fixed;
-    bottom: 0;
-    height: 8vh;
-    width: 100vw;
-    
-    
- }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  background-color: #111344;
+  position: fixed;
+  bottom: 0;
+  height: 8vh;
+  width: 100vw;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+footer:hover {
+  color: #ffcc00; 
+  background-color: #0e0b3e; 
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.1rem;
+}
 
  /* Styling for FAQ button */
 .faq-button {
-    background-color: #47799c;
+    background-color: #d855b8;;
     color: white;
     padding: 8px 15px;
     font-size: 0.9rem;

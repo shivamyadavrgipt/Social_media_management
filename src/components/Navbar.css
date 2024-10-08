@@ -1,42 +1,77 @@
 /* Navbar.css */
 .navbar {
-    display: flex;
-    justify-content: start; /* Center the links */
-    align-items: start;
-    background-color: #f9cff2; /* Darker background */
-    padding: 0.7rem;
-    position: fixed; /* Fix the navbar at the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Stretch the navbar across the entire screen */
-    z-index: 1000; /* Ensure it stays on top */
-  }
-  
-  .navbar a {
-    display: inline-block;
-    padding: 0.5rem 0.9rem 0.5rem 0.9rem ;
-    color: #111344; /* Light blue text */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    background-color: #eba6e6; /* Slightly brighter on hover */
-    border-radius: 8px;
-  }
-  
-  .navbar a.active {
-    color: #ffffff; /* White color for active link */
-    border-bottom: 2px solid #61dafb;
-  }
-  
-  /* Add some margin to push content below the navbar */
-  .body-content {
-    margin-top: 80px; /* Adjust this based on the height of your navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111344; /* New solid background color */
+  padding: 0.7rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar a {
+  padding: 0.7rem 1.2rem; /* Better padding for a comfortable click area */
+  color: white;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s;
+  position: relative;
+}
+
+.navbar a:hover {
+  background-color: #eba6e6; /* Highlighted background on hover */
+  color: #ffffff;
+  border-radius: 8px;
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow on hover */
+}
+
+.navbar a.active {
+  color: #ffffff; /* White text for active link */
+  background-color: #d855b8; /* Different background for active link */
+  border-radius: 8px;
+  border-bottom: 3px solid black; /* Accent border for active link */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black; /* Accent color */
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%; /* Expands on hover */
+}
+
+.body-content {
+  margin-top: 90px; /* Adjust margin to account for fixed navbar */
+}
+
+/* Media query to handle smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      padding: 1rem;
   }
 
-  
+  .navbar a {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+  }
+}
