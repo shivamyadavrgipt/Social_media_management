@@ -7,7 +7,7 @@ import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
 import './App.css'
 import Footer from "./components/Footer";
-import Settings from './pages/Settings'; // Ensure this path is correct
+import Settings from './pages/settings'; // Ensure this path is correct
 
 
 function App() {
