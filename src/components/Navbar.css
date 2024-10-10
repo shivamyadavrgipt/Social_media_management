@@ -1,9 +1,9 @@
 /* Navbar.css */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Aligns items to the left */
   align-items: center;
-  background-color: #111344; /* New solid background color */
+  background-color: #f9cff2;/* New solid background color */
   padding: 0.7rem;
   position: fixed;
   top: 0;
@@ -16,9 +16,9 @@
 
 .navbar a {
   padding: 0.7rem 1.2rem; /* Better padding for a comfortable click area */
-  color: white;
+  color:  #111344; /
   font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
-  margin: 0 15px;
+  margin: 0 15px; /* Margin between links */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
@@ -59,19 +59,19 @@
 }
 
 .body-content {
-  margin-top: 90px; /* Adjust margin to account for fixed navbar */
+  margin-top: 90px; 
 }
 
 /* Media query to handle smaller screens */
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
-      padding: 1rem;
+    flex-direction: column;
+    padding: 1rem;
   }
 
   .navbar a {
-      margin: 10px 0;
-      width: 100%;
-      text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
   }
 }
