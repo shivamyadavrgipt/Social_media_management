@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import './App.css'
 import Footer from "./components/Footer";
 import Settings from './pages/Settings'; // Ensure this path is correct
+import LandingPage from './pages/LandingPage'; // Ensure this path is correct
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <div className="body-content"> 
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/a" element={<LandingPage />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/settings" element={<Settings />} />
