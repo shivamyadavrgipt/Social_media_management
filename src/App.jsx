@@ -17,8 +17,8 @@ function App() {
       <Navbar />
       <div className="body-content"> 
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/a" element={<LandingPage />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/settings" element={<Settings />} />

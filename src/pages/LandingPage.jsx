@@ -1,13 +1,13 @@
-// LandingPage.jsx
 import React from "react";
-import './LandingPage.css';  
+import { Link } from "react-router-dom";
+import './LandingPage.css';
 
 const LandingPage = () => {
   return (
     <div className="landing-container">
-      <nav className="navbar">
+      <nav className="navbar" id="navbarr">
         <div className="logo">
-            <img src="\is14Logo.png" alt="" />
+            <img src="\is14Logo.png" alt="Logo" />
         </div>
         <div className="nav-links">
           <button className="btn-login">Login</button>
@@ -16,9 +16,14 @@ const LandingPage = () => {
       </nav>
 
       <div className="hero-section">
-        <h1>Take Control of Your Social Media</h1>
-        <p>Manage all your social media platforms from one place, analyze user interactions, and post with ease.</p>
-        <button className="btn-get-started">Get Started</button>
+        <h1>Simplify Your Social Media Management</h1>
+        <p>
+          Welcome to <strong>Social Manager</strong>! Effortlessly manage all your social media accounts from one powerful, streamlined platform. 
+          Analyze interactions, schedule posts, and optimize your online presence with ease.
+        </p>
+        <Link to="/dashboard">
+          <button className="btn-get-started">Get Started Now</button>
+        </Link>
       </div>
     </div>
   );

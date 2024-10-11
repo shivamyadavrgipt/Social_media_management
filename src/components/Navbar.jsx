@@ -6,7 +6,7 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <Link to="/">Dashboard</Link>
+      <Link to="/dashboard">Dashboard</Link>
       <Link to="/posts">Posts</Link>
       <Link to="/analytics">Analytics</Link>
       <Link to="/settings">Settings</Link>

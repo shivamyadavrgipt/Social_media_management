@@ -1,6 +1,8 @@
+
+
 body {
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .landing-container {
@@ -16,9 +18,13 @@ body {
   .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: #4a90e2;
     max-height:40px;
+  }
+
+  #navbarr{
+    justify-content: space-between;
   }
   
   .logo img {
