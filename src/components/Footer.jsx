@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="faq-modal">
           <div className="faq-modal-content">
             <span className="close-faq" onClick={closeFAQ}>&times;</span>
-            <h2>Frequently Asked Questions</h2>
+            <h2 className="h2">Frequently Asked Questions</h2>
             <div className="faq-item">
               <h4>What is Social Manager?</h4>
               <p>Social Manager is a tool for managing your social media posts, analytics, and settings from a single dashboard.</p>
