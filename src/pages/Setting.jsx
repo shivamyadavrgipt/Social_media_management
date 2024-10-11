@@ -1,7 +1,7 @@
 // src/pages/Settings.jsx
 import React from 'react';
-
-const Settings = () => {
+//updated file name
+const Setting = () => {
   return (
     <div>
       <h1>Settings</h1>
@@ -10,4 +10,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default Setting;
