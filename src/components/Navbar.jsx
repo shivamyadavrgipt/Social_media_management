@@ -13,6 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+
       <Link 
         to="/" 
         className={activeLink === '/' ? 'active' : ''} 
@@ -41,6 +42,12 @@ const Navbar = () => {
       >
         Settings
       </Link>
+
+      <Link to="/dashboard">Dashboard</Link>
+      <Link to="/posts">Posts</Link>
+      <Link to="/analytics">Analytics</Link>
+      <Link to="/settings">Settings</Link>
+
     </nav>
   );
 };
