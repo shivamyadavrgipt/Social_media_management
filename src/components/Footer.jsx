@@ -5,12 +5,8 @@ const Footer = () => {
   const year = new Date().getFullYear();
   const [isFAQOpen, setIsFAQOpen] = useState(false);
 
-  const openFAQ = () => {
-    setIsFAQOpen(true);
-  };
-
-  const closeFAQ = () => {
-    setIsFAQOpen(false);
+  const toggleFAQ = () => {
+    setIsFAQOpen(prevState => !prevState); 
   };
 
   return (
