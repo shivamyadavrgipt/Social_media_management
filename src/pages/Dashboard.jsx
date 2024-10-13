@@ -4,11 +4,11 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 import { Card, CardContent, Typography, CircularProgress, Box } from '@mui/material';
 import './Dashboard.css';
 
-// Register required Chart.js components
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, PointElement, LineElement, ArcElement);
 
 export default function Dashboard() {
-  // Sample Data for Charts
+
   const barData = {
     labels: ['January', 'February', 'March', 'April', 'May'],
     datasets: [
@@ -43,7 +43,7 @@ export default function Dashboard() {
     ],
   };
 
-  // Progress percentages for each card
+
   const progressData = {
     postImpressions: 75,
     followers: 50,
