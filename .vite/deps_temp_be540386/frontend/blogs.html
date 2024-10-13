@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs from Hashnode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .blog-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog-post img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .blog-title {
+            font-size: 24px;
+            margin: 20px 0 10px;
+            color: #333;
+        }
+        .blog-brief {
+            font-size: 18px;
+            color: #666;
+        }
+        .blog-date {
+            color: #999;
+            font-size: 14px;
+        }
+        .blog-post a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blog-container">
+        <h1>Latest Blogs from Hashnode</h1>
+
+        {% for post in posts %}
+        <div class="blog-post">
+            <img src="{{ post.coverImage }}" alt="{{ post.title }}">
+            <h2 class="blog-title"><a href="https://your-hashnode-username.hashnode.dev/{{ post.slug }}">{{ post.title }}</a></h2>
+            <p class="blog-brief">{{ post.brief }}</p>
+            <p class="blog-date">Posted on: {{ post.dateAdded }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
