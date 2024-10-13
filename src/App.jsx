@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 import Settings from './pages/Settings'; // Ensure this path is correct
 import LandingPage from './pages/LandingPage'; // Ensure this path is correct
 
-
 function App() {
   return (
     <Router>
