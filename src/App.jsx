@@ -8,9 +8,9 @@ import Navbar from "./components/Navbar";
 import Contributors from "./pages/Contributors";
 import "./App.css";
 import Footer from "./components/Footer";
+import Settings from './pages/Settings'; // Ensure this path is correct
+import LandingPage from './pages/LandingPage'; // Ensure this path is correct
 
-import Settings from "./pages/settings"; // Ensure this path is correct
-import LandingPage from "./pages/LandingPage"; // Ensure this path is correct
 
 function App() {
   return (
