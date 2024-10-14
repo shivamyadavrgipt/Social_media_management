@@ -1,15 +1,15 @@
 /* Navbar.css */
 .navbar {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  background-color: #f9cff2;
-  padding: 0.7rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+    display: flex;
+    justify-content: start; /* Center the links */
+    align-items: start;
+    background-color: #f9cff2; /* Darker background */
+    padding: 0.7rem;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretch the navbar across the entire screen */
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 .navbar a {
