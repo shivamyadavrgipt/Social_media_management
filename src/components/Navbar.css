@@ -4,7 +4,7 @@
     justify-content: start; /* Center the links */
     align-items: start;
     background-color: #f9cff2; /* Darker background */
-    padding: 0.7rem;
+    padding: 1.7rem;
     position: fixed; /* Fix the navbar at the top */
     top: 0;
     left: 0;
@@ -14,13 +14,13 @@
   
   .navbar a {
     display: inline-block;
-    padding: 0.5rem 0.9rem 0.5rem 0.9rem ;
+    padding: 0rem 0.9rem 0.5rem 0.9rem ;
     color: #111344; /* Light blue text */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0 20px;
+    margin: 0px 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: background-color 0.3s ease;
   }
   
@@ -36,7 +36,7 @@
   
   /* Add some margin to push content below the navbar */
   .body-content {
-    margin-top: 80px; /* Adjust this based on the height of your navbar */
+    margin-top: 40px; /* Adjust this based on the height of your navbar */
   }
 
   

@@ -1,4 +1,4 @@
-// App.jsx
+
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
@@ -7,8 +7,8 @@ import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
 import './App.css'
 import Footer from "./components/Footer";
-import Settings from './pages/Settings'; // Ensure this path is correct
-import LandingPage from './pages/LandingPage'; // Ensure this path is correct
+import Settings from './pages/settings'; 
+import LandingPage from './pages/LandingPage'; 
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path="/posts" element={<Posts />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/settings" element={<Settings />} />
+
         </Routes>
       </div>
       <Footer/>
