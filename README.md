@@ -1,3 +1,5 @@
+## ⭐️ Show Your Support
+If you find this project valuable or appreciate the work, please consider starring the repository on [GitHub](https://github.com/shivamyadavrgipt). Your support helps increase its visibility and encourages further development. Thank you!
 <div align="center">
   <p>
     <a href="https://github.com/shivamyadavrgipt/Social_media_management">
