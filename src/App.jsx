@@ -4,10 +4,12 @@ import Dashboard from "./pages/Dashboard";
 import Posts from "./pages/Posts";
 import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
+import Contributors from "./pages/Contributors"; // Keep the import from 'main'
 import "./App.css";
 import Footer from "./components/Footer";
 import Settings from "./pages/settings";
 import LandingPage from "./pages/LandingPage";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/contributors" element={<Contributors />} /> {/* Keep this route from 'main' */}
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
@@ -28,6 +31,7 @@ function App() {
 }
 
 export default App;
+
 
 <div align="center">
   <p>
