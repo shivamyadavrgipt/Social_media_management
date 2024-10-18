@@ -1,42 +1,97 @@
-/* Navbar.css */
+/* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: start; /* Center the links */
-    align-items: start;
-    background-color: #f9cff2; /* Darker background */
-    padding: 0.7rem;
-    position: fixed; /* Fix the navbar at the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Stretch the navbar across the entire screen */
-    z-index: 1000; /* Ensure it stays on top */
-  }
-  
-  .navbar a {
-    display: inline-block;
-    padding: 0.5rem 0.9rem 0.5rem 0.9rem ;
-    color: #111344; /* Light blue text */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    background-color: #eba6e6; /* Slightly brighter on hover */
-    border-radius: 8px;
-  }
-  
-  .navbar a.active {
-    color: #ffffff; /* White color for active link */
-    border-bottom: 2px solid #61dafb;
-  }
-  
-  /* Add some margin to push content below the navbar */
-  .body-content {
-    margin-top: 80px; /* Adjust this based on the height of your navbar */
-  }
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10;
+  left: 0;
+  width: 250px !important;
+  height: 3000px !important;
+  background-color: rgb(15, 83, 143) !important;
+
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.active {
+  transform: translateX(0);
+
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+
+ 
+
+}
+
+.navbar a {
+  padding: 0.75rem 1rem;
+  color: #111344;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+  margin: 5px 0;
 
   
+}
+
+.navbar a:hover {
+  color: rgb(16, 104, 180);
+  border-radius: 8px;
+}
+
+.hamburger {
+  display: none;
+  
+  flex-direction: column;
+  cursor: pointer;
+  margin: 20px;
+  
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #111344;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    transform: translateX(-100%);
+   
+  }
+
+  .navbar.active {
+    transform: translateX(0);
+   
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+  }
+
+  .navbar-links {
+    display: flex;
+  
+  }
+}
+
+
+.body-content {
+  margin-left: 250px;
+ 
+  padding: 20px;
+  
+}
