@@ -1,0 +1,69 @@
+body.light {
+    background-color: #ffffff;
+    color: #111344;
+  }
+  
+  body.dark {
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+  }
+  
+  .navbar.light {
+    background-color: #f9cff2; /* Light mode background */
+  }
+  
+  .navbar.dark {
+    background-color: #333333; /* Dark mode background */
+  }
+  
+  .navbar a.light {
+    color: #111344; /* Light mode text */
+  }
+  
+  .navbar a.dark {
+    color: #f9f9f9; /* Dark mode text */
+  }
+  
+  /* Wheel styling */
+  .wheel {
+    width: 100px; /* Diameter of the wheel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  margin-left: 33vw;
+  margin-bottom: 63vh;
+    transition: transform 0.4s ease; /* smooth transition */
+   
+  }
+  
+  /* Inner wheel styling */
+  .wheel-inner {
+    width: 80%; /* Inner circle */
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Icon size */
+    transition: transform 0.4s ease;
+  }
+  
+  /* Rotate effect on hover */
+  .wheel:hover {
+    transform: rotate(360deg); /* full rotation */
+  }
+  
+  /* Wiggle effect on click */
+  .wheel:active .wheel-inner {
+    animation: wiggle 0.5s ease; /* trigger wiggle when clicked */
+  }
+  
+  /* Keyframes for wiggle effect */
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
