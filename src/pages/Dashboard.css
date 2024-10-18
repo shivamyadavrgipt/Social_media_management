@@ -4,6 +4,20 @@
     padding: 0;
     box-sizing: border-box;
   }
+  :root {
+    --bg-color: #f0f0f0;
+    --text-color: #111;
+    --card-bg: white;
+    --chart-bg: white;
+  }
+  
+  /* Dark mode */
+  body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --card-bg: #333;
+    --chart-bg: #444;
+  }
   
   html, body {
     height: 100%;
@@ -20,7 +34,9 @@
     width: 100vw; /* Full width of the viewport */
     padding: 10px;
     box-sizing: border-box;
-    background-color: #f0f0f0; /* Optional background color */
+    
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
   
   h1 {
@@ -31,6 +47,7 @@
   }
   
   .cards-container {
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -39,15 +56,19 @@
   }
   
   .card {
-    background-color: white;
+    background-color: var(--card-bg); /* Dynamic background color based on mode */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 150px;
+    width: 100%;
   }
+  
+
   
   .charts-container {
     display: grid;
@@ -67,6 +88,7 @@
     align-items: center;
     height: 70%;
     margin-top: 20px;
+    background-color: var(--chart-bg);
   }
   
   

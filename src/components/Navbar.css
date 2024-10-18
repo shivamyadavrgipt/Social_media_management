@@ -1,42 +1,58 @@
 /* Navbar.css */
 .navbar {
-    display: flex;
-    justify-content: start; /* Center the links */
-    align-items: start;
-    background-color: #f9cff2; /* Darker background */
-    padding: 1.7rem;
-    position: fixed; /* Fix the navbar at the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Stretch the navbar across the entire screen */
-    z-index: 1000; /* Ensure it stays on top */
-  }
-  
-  .navbar a {
-    display: inline-block;
-    padding: 0rem 0.9rem 0.5rem 0.9rem ;
-    color: #111344; /* Light blue text */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    background-color: #eba6e6; /* Slightly brighter on hover */
-    border-radius: 8px;
-  }
-  
-  .navbar a.active {
-    color: #ffffff; /* White color for active link */
-    border-bottom: 2px solid #61dafb;
-  }
-  
-  /* Add some margin to push content below the navbar */
-  .body-content {
-    margin-top: 40px; /* Adjust this based on the height of your navbar */
-  }
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 1.7rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+body.dark .navbar {
+  background-color: #333;
+}
 
-  
+body.dark .navbar a {
+  color: #f0f0f0;
+}
+
+.navbar.light {
+  background-color: #f9cff2;
+}
+
+.navbar.dark {
+  background-color: #333333;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 0rem 0.9rem 0.5rem 0.9rem;
+  margin: 0px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a.light {
+  color: #111344;
+}
+
+.navbar a.dark {
+  color: #f9f9f9;
+}
+
+.navbar a:hover {
+  background-color: #eba6e6;
+  border-radius: 8px;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid #61dafb;
+}
+
+.body-content {
+  margin-top: 40px;
+}
