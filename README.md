@@ -108,6 +108,17 @@ This project is open-source under the MIT License. Feel free to use, modify, and
 - 🖼️ Media Upload: Allow users to upload media directly to their accounts.
 -👨‍💻 Authors
 
+# 👤 Contacts
+### Admin ⚡️
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/shivamyadavrgipt"><img src="https://media.licdn.com/dms/image/v2/D5603AQGwR5qKh3PiUg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707732106553?e=1734566400&v=beta&t=225cKroR7Nytec7jaZhYb-muLNu3Eh5qEYjiOvStoWo" width=150px height=150px /></a></br> <h4 style="color:red;">SHIVAM YADAV</h4>
+ <a href="https://www.linkedin.com/in/shivam-yadav-2250122a5/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+</td>
+</tr>
+</table>
+
 # Shivam Yadav
 🙏 Acknowledgments
 Thanks to the open-source community and contributors for your support and collaboration!
