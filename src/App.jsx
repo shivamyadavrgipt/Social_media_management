@@ -1,4 +1,4 @@
-// App.jsx
+
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
@@ -8,8 +8,8 @@ import Navbar from "./components/Navbar";
 import Contributors from "./pages/Contributors";
 import "./App.css";
 import Footer from "./components/Footer";
-import Settings from './pages/Settings'; // Ensure this path is correct
-import LandingPage from './pages/LandingPage'; // Ensure this path is correct
+import Settings from './pages/settings'; 
+import LandingPage from './pages/LandingPage'; 
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/contributors" element={<Contributors />} />
           <Route path="/settings" element={<Settings />} />
+
         </Routes>
       </div>
       <Footer />
