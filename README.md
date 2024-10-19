@@ -1,3 +1,8 @@
+
+<img  src="https://readme-typing-svg.herokuapp.com?color=76543ffaa&center=true&vCenter=true&size=40&width=900&height=80&lines=Welcome+To+Social+Media+Management"/>
+
+----
+
 ## ⭐️ Show Your Support
 If you find this project valuable or appreciate the work, please consider starring the repository on [GitHub](https://github.com/shivamyadavrgipt). Your support helps increase its visibility and encourages further development. Thank you!
 <div align="center">
@@ -23,6 +28,8 @@ If you find this project valuable or appreciate the work, please consider starri
 # Social Media Management Account Frontend
 Welcome to the Social Media Management Account Frontend! This is a React application styled with Tailwind CSS for managing multiple social media accounts. The application is designed to simplify social media management by providing an intuitive interface.
 
+---
+
 # 🌐 Live Demo
 Check out the live deployment https://social-media-management-eight.vercel.app/
 # ✨ Features
@@ -38,6 +45,8 @@ Check out the live deployment https://social-media-management-eight.vercel.app/
 🚀 Getting Started
 To get a local copy up and running, follow these steps.
 
+---
+
 # Guidelines
 
 - Before creating an issue, use the search feature to check if a similar issue already exists.
@@ -46,6 +55,8 @@ To get a local copy up and running, follow these steps.
 - Always mention the issue number for which the Pull Request is being created. You can use one of the following keywords in your PR description or comment to reference the issue:
 `closes #123` `fixes #123` `resolves #123` `implements #123`
 - Remember to follow this practice to streamline collaboration and keep the project organized! 😊
+
+---
 
 # Prerequisites
 Make sure you have the following installed on your machine:
@@ -66,6 +77,8 @@ Make sure you have the following installed on your machine:
 - Copy code
 -npm install
 
+---
+
 # 🖌️ Contributing
 We welcome contributions! Here's how you can help:
 
@@ -77,14 +90,35 @@ We welcome contributions! Here's how you can help:
 - Create a pull request.
 - Please follow our Contributing Guidelines (if available) and make sure your changes adhere to the project's coding standards.
 
+# 💖 Our Talented Contributors 
+ <a href="https://github.com/shivamyadavrgipt/Social_media_management/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=shivamyadavrgipt/Social_media_management" />
+</a>
+
+---
+
 # 📝 License
 This project is open-source under the MIT License. Feel free to use, modify, and distribute this project.
+
+---
 
 # 💡 Roadmap
 - 🔌 API Integration: Connect to backend APIs for managing social media posts and scheduling.
 - 📊 Analytics Dashboard: Display user analytics and engagement data.
 - 🖼️ Media Upload: Allow users to upload media directly to their accounts.
 -👨‍💻 Authors
+
+# 👤 Contacts
+### Admin ⚡️
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/shivamyadavrgipt"><img src="https://media.licdn.com/dms/image/v2/D5603AQGwR5qKh3PiUg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707732106553?e=1734566400&v=beta&t=225cKroR7Nytec7jaZhYb-muLNu3Eh5qEYjiOvStoWo" width=150px height=150px /></a></br> <h4 style="color:red;">SHIVAM YADAV</h4>
+ <a href="https://www.linkedin.com/in/shivam-yadav-2250122a5/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+</td>
+</tr>
+</table>
+
 # Shivam Yadav
 🙏 Acknowledgments
 Thanks to the open-source community and contributors for your support and collaboration!
