@@ -1,3 +1,6 @@
+
+<img  src="https://readme-typing-svg.herokuapp.com?color=45ffaa&center=true&vCenter=true&size=40&width=900&height=80&lines=Welcome+To+Social+Media+Management"/>
+
 ## ⭐️ Show Your Support
 If you find this project valuable or appreciate the work, please consider starring the repository on [GitHub](https://github.com/shivamyadavrgipt). Your support helps increase its visibility and encourages further development. Thank you!
 <div align="center">
