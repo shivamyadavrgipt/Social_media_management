@@ -118,7 +118,5 @@ This project is open-source under the MIT License. Feel free to use, modify, and
 </td>
 </tr>
 </table>
-
-# Shivam Yadav
 🙏 Acknowledgments
 Thanks to the open-source community and contributors for your support and collaboration!
