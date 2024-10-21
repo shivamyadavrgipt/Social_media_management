@@ -2,7 +2,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-import Posts from "./pages/Posts";
 import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
 import Contributors from "./pages/Contributors";
@@ -10,6 +9,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Settings from './pages/settings'; 
 import LandingPage from './pages/LandingPage'; 
+import Publish from "./pages/Publish";
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts" element={<Publish />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/contributors" element={<Contributors />} />
           <Route path="/settings" element={<Settings />} />

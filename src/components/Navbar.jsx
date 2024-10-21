@@ -64,7 +64,10 @@ const Navbar = () => {
     alt="Logo" 
     className="mr-2 w-10 h-10 rounded-full" // Adjust the size here
   />
-  <span className={`text-xl font-bold ${isDarkMode ? 'dark:text-white' : ''}`}>SS͜͡o͜͡c͜͡i͜͡a͜͡l͜͡p͜͡l͜͡u͜͡s͜͡</span> {/* Adjusted font size */}
+ <a href="/">
+  <span className={`text-xl font-bold ${isDarkMode ? 'dark:text-white' : ''}`}>SS͜͡o͜͡c͜͡i͜͡a͜͡l͜͡p͜͡l͜͡u͜͡s͜͡</span>
+</a>
+
 </div>
 
       {/* Navbar Section */}
