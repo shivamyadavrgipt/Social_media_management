@@ -53,7 +53,7 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard-container">
-      <h1>Analyse User All Data</h1>
+      <h1 className='f'>Analyse User All Data</h1>
 
       {/* Cards Section */}
       <div className="cards-container">
