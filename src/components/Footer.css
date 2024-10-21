@@ -1,0 +1,137 @@
+footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    background-color: #45496d;
+    position: fixed;
+    bottom: 0;
+    height: 8vh;
+    width: 100vw;
+    
+    
+ }
+
+ /* Styling for FAQ button */
+.faq-button {
+    background-color: #47799c;
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;  /* Position the button */
+    right: 20px;         /* Move to the right */
+    bottom: 10px;        /* Align with the footer */
+  }
+  
+  .faq-button:hover {
+    background-color: #3a6884;
+  }
+  
+  /* Modal Background */
+  .faq-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    animation: fadeIn 0.5s;
+  }
+  
+  /* Modal Content */
+  .faq-modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .faq-modal-content h2 {
+    color: #4f517d;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h4 {
+    color: #4f517d;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item p {
+    color: #47799c;
+    margin-bottom: 20px;
+  }
+  
+  /* Close Button */
+  .close-faq {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #47799c;
+    transition: color 0.3s ease;
+  }
+  
+  .close-faq:hover {
+    color: #3a6884;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .faq-modal-content {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .faq-button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+  .faq-modal-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Make the background semi-transparent */
+    padding: 20px;
+    border-radius: 12px;
+    width: 25%; /* Cover 1/4th of the screen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    right: 0; /* Align it to the right */
+    top: 0;
+    margin: 0;
+}
+
+.faq-modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Make the overall modal background a bit more transparent */
+    display: flex;
+    justify-content: flex-end; /* Align the modal content to the right */
+    align-items: center;
+}
