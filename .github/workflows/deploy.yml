@@ -1,4 +1,4 @@
-name: Deploy to Netlify
+name: Deploy to Vercel
 
 on:
   push:
@@ -19,10 +19,11 @@ jobs:
       - name: Build the project
         run: npm run build  # Adjust based on your project's build process
 
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.3.3
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v20
         with:
-          publish-dir: ./build  # Adjust this to the directory of your build output (e.g., dist for Vue.js)
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}  # Vercel token stored in GitHub Secrets
+          vercel-args: "--prod"  # To deploy to production
+          working-directory: ./  # Change if the project is located in a subdirectory
+          github-token: ${{ secrets.GITHUB_TOKEN }}  # Optional, for GitHub integration
+
