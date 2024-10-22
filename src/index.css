@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +6,28 @@
 body.dark {
   background-color: #1a202c; /* Dark background */
   color: #f7fafc; /* Light text color */
+}
+/* index.css */
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #fde8e9; /* Dark background */
+  color: #47799c; /* Light text */
+  font-size: large;
+}
+
+h1 {
+  color: #4f517d; /* White color for headings */
+}
+p{
+  margin-top: 0.5rem;
+  font-size: larger;
+}
+
+a{
+  margin:0px !important;
+  padding:0px !important;
 }
