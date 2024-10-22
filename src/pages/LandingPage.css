@@ -20,7 +20,7 @@ body {
     display: flex;
     /* justify-content: space-between; */
     background-color: #4a90e2;
-    max-height:40px;
+    max-height:45px;
   }
 
   #navbarr{
@@ -28,17 +28,22 @@ body {
   }
   
   .logo img {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     width: auto;
     padding-left: 8px;
+    /* padding-bottom: 24px; */
   }
   
-  .nav-links {
+  .nav-links-sign {
     margin-top: 2px;
     display: flex;
     gap: 15px;
     margin-right: 35px;
+    
   }
   
   .btn-login,

@@ -13,7 +13,7 @@ const BasicNavbar = () => {
           <button className="btn-login">Login</button>
           <button className="btn-signup">Sign Up</button>
         </div> */}
-        <div className="nav-links">
+        <div className="nav-links-sign">
           <div>
             <Link to="/login">
               <button className="btn-login">Login</button>
