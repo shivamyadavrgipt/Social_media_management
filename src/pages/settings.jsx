@@ -1,13 +1,9 @@
-// src/pages/Settings.jsx
-import React from 'react';
+import React from 'react'
 
-const Settings = () => {
+export default function Settings() {
   return (
     <div>
-      <h1>Settings</h1>
-      <p>Manage your account settings here.</p>
+      settings
     </div>
-  );
-};
-
-export default Settings;
+  )
+}
