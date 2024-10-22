@@ -8,9 +8,9 @@ import Navbar from "./components/Navbar";
 import Contributors from "./pages/Contributors";
 import "./App.css";
 import Footer from "./components/Footer";
-import Settings from './pages/settings'; // Ensure this path is correct
-import LandingPage from './pages/LandingPage'; // Ensure this path is correct
-
+import Settings from "./pages/Settings"; // Ensure this path is correct
+import LandingPage from "./pages/LandingPage"; // Ensure this path is correct
+import Signup from "./pages/SignUp";
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/contributors" element={<Contributors />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
       <Footer />
