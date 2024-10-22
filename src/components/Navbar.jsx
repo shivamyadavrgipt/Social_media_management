@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -161,18 +162,4 @@ const Navbar = () => {
         </button>
       </nav>
     </header>
-  );
-};
-
-// Dropdown item component for reuse
-const DropdownItem = ({ icon, title, description }) => (
-  <div className="flex items-center space-x-2">
-    <FontAwesomeIcon icon={icon} className="text-lg font-medium" />
-    <div>
-      <h3 className="font-semibold text-lg">{title}</h3>
-      <p className="text-sm text-gray-600 dark:text-gray-400">{description}</p>
-    </div>
-  </div>
-);
-
-export default Navbar;
+};}

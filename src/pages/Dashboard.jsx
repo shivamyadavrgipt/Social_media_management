@@ -1,57 +1,9 @@
+// src/pages/Dashboard.jsx
 import React from 'react';
-import { Bar, Line, Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, PointElement, LineElement, ArcElement } from 'chart.js';
-import { Card, CardContent, Typography, CircularProgress, Box } from '@mui/material';
-import './Dashboard.css';
 
-
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, PointElement, LineElement, ArcElement);
-
-export default function Dashboard() {
-
-  const barData = {
-    labels: ['January', 'February', 'March', 'April', 'May'],
-    datasets: [
-      {
-        label: 'Sales',
-        data: [65, 59, 80, 81, 56, 55],
-        backgroundColor: 'rgba(75,192,192,0.6)',
-      },
-    ],
-  };
-
-  const lineData = {
-    labels: ['January', 'February', 'March', 'April', 'May'],
-    datasets: [
-      {
-        label: 'Revenue',
-        data: [40, 60, 75, 50, 90],
-        borderColor: 'rgba(75,192,192,1)',
-        fill: false,
-      },
-    ],
-  };
-
-  const pieData = {
-    labels: ['Red', 'Blue', 'Yellow'],
-    datasets: [
-      {
-        label: 'Colors',
-        data: [300, 50, 100],
-        backgroundColor: ['rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)'],
-      },
-    ],
-  };
-
-
-  const progressData = {
-    postImpressions: 75,
-    followers: 50,
-    profileViewers: 65,
-    searchAppearances: 85,
-  };
-
+const Dashboard = () => {
   return (
+
     <div className="dashboard-container">
       <h1 className='f'>Analyse User All Data</h1>
 
@@ -174,6 +126,13 @@ export default function Dashboard() {
           <Pie data={pieData} />
         </div>
       </div>
+=======
+    <div>
+      <h1>Dashboard</h1>
+      <p>Welcome to your social media management dashboard!</p>
+>>>>>>> 8ffdaaf8eacafb68ea50989268859a62c5f373da
     </div>
   );
-}
+};
+
+export default Dashboard;

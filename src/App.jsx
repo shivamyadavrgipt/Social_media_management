@@ -1,4 +1,4 @@
-
+// App.jsx
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import Settings from './pages/settings'; 
 import LandingPage from './pages/LandingPage'; 
 import Publish from "./pages/Publish";
+import Settings from './pages/settings'; // Ensure this path is correct
+import LandingPage from './pages/LandingPage'; // Ensure this path is correct
 
 
 function App() {
@@ -24,7 +26,6 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/contributors" element={<Contributors />} />
           <Route path="/settings" element={<Settings />} />
-
         </Routes>
       </div>
     </Router>
