@@ -1,42 +1,98 @@
 /* Navbar.css */
 .navbar {
     display: flex;
-    justify-content: start; /* Center the links */
-    align-items: start;
-    background-color: #f9cff2; /* Darker background */
-    padding: 0.7rem;
-    position: fixed; /* Fix the navbar at the top */
+    justify-content: flex-start; /* Align items to the left */
+    gap:17px;
+    align-items: center;
+    background-color: #f9cff2; /* Light pink background */
+    padding: 0.8rem 2rem; /* Balanced padding */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Stretch the navbar across the entire screen */
-    z-index: 1000; /* Ensure it stays on top */
-  }
-  
-  .navbar a {
-    display: inline-block;
-    padding: 0.5rem 0.9rem 0.5rem 0.9rem ;
-    color: #111344; /* Light blue text */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0 20px;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar is on top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease;
+    height: 90px;
+   
+}
+
+.navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color: #111344; /* Dark blue text */
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    background-color: #eba6e6; /* Slightly brighter on hover */
-    border-radius: 8px;
-  }
-  
-  .navbar a.active {
-    color: #ffffff; /* White color for active link */
-    border-bottom: 2px solid #61dafb;
-  }
-  
-  /* Add some margin to push content below the navbar */
-  .body-content {
-    margin-top: 80px; /* Adjust this based on the height of your navbar */
-  }
+    padding: 0.5rem 1rem;
+    height: 40px;
+     width: 115px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  
+.navbar a:hover {
+    background-color: #eba6e6; /* Brighter pink on hover */
+    color: #ffffff; /* White text on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Hover shadow */
+    width: 120px;
+}
+
+.navbar a.active {
+    color: #ffffff; /* Active link is white */
+    background-color: #61dafb; /* Highlight active link */
+    border-bottom: 3px solid #ffffff; /* Subtle underline */
+    border-radius: 6px;
+}
+.navbar .active {
+  background-color: #c4c2c3 !important;
+  font-weight: bold; /* Highlighted tab style */
+  color: rgb(55, 55, 55) !important; /* Active link color */
+  border-bottom: 2px solid blue ; /* Optional: underline for active tab */
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111344;
+    text-decoration: none;
+}
+
+.navbar .logo:hover {
+    color: #eba6e6;
+}
+
+.body-content {
+    margin-top: 100px; /* Adjust based on navbar height */
+    padding: 1rem 2rem;
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start;
+    }
+    .navbar a {
+        margin: 0.5rem 0; /* Adjust margin for links */
+        font-size: 1rem;
+    }
+    .navbar .logo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.6rem 1.5rem;
+    }
+    .navbar a {
+        padding: 0.4rem 0.8rem;
+    }
+    .navbar .logo {
+        font-size: 1.2rem;
+    }
+}

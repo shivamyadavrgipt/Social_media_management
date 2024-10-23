@@ -17,7 +17,7 @@ const LandingPage = () => {
             Analyze interactions, schedule posts, and optimize your online
             presence with ease.
           </p>
-          <Link to="/signup">
+          <Link to="/dashboard">
             <button className="btn-get-started">Get Started Now</button>
           </Link>
         </div>

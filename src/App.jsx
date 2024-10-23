@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Settings from "./pages/settings"; // Ensure this path is correct
 import LandingPage from "./pages/LandingPage"; // Ensure this path is correct
 import Signup from "./pages/SignUp";
+import Newsletter from "./pages/Newsletter";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/contributors" element={<Contributors />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/newsletter" element={<Newsletter />} />
         </Routes>
       </div>
       <Footer />
