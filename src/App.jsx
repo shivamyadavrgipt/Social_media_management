@@ -6,10 +6,16 @@ import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
 import Contributors from "./pages/Contributors";
 import "./App.css";
+
 import Publish from "./pages/Publish";
+
+// import Footer from "./components/Footer";
+import Settings from "./pages/settings"; // Ensure this path is correct
+import LandingPage from "./pages/LandingPage"; // Ensure this path is correct
+
 import Signup from "./pages/SignUp";
-import LandingPage from "./pages/LandingPage";
-import Settings from "./pages/settings";
+
+
 
 function App() {
   return (
