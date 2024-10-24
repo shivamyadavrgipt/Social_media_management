@@ -1,47 +1,67 @@
-import React, { useState } from 'react';
-import './Footer.css';
+import React from 'react';
 
 const Footer = () => {
-  const year = new Date().getFullYear();
-  const [isFAQOpen, setIsFAQOpen] = useState(false);
-
-  const openFAQ = () => {
-    setIsFAQOpen(true);
-  };
-
-  const closeFAQ = () => {
-    setIsFAQOpen(false);
-  };
-
   return (
-    <footer className="footer-container">
-      <p>© {year} Social Manager. All rights reserved.</p>
-      <button onClick={openFAQ} className="faq-button">FAQ</button>
+    <footer className="bg-black/10 text-slate-500 dark:text-slate-400 py-10">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between">
+          <div className="flex ">
 
-      {isFAQOpen && (
-        <div className="faq-modal">
-          <div className="faq-modal-content">
-            <span className="close-faq" onClick={closeFAQ}>&times;</span>
-            <h2>Frequently Asked Questions</h2>
-            <div className="faq-item">
-              <h4>What is Social Manager?</h4>
-              <p>Social Manager is a tool for managing your social media posts, analytics, and settings from a single dashboard.</p>
-            </div>
-            <div className="faq-item">
-              <h4>How can I manage my posts?</h4>
-              <p>You can manage your posts from the 'Posts' tab where you can create, edit, and schedule your social media posts.</p>
-            </div>
-            <div className="faq-item">
-              <h4>Can I see analytics for my social media?</h4>
-              <p>Yes, you can view detailed analytics in the 'Analytics' tab to track your engagement, followers, and more.</p>
-            </div>
-            <div className="faq-item">
-              <h4>How do I change my account settings?</h4>
-              <p>You can change your account settings in the 'Settings' section, including your profile information and notifications.</p>
+            <img
+              src="https://cdn-icons-gif.flaticon.com/7211/7211809.gif"
+              alt="Logo"
+              className="mr-2 w-10 h-10 rounded-full" // Adjust the size here
+            />
+
+            <h1 className="text-2xl font-bold text-gray/20 mb-4 ">SS͜͡o͜͡c͜͡i͜͡a͜͡l͜͡p͜͡l͜͡u͜͡s͜͡</h1>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold text-gray/20 mb-4">SS͜͡o͜͡c͜͡i͜͡a͜͡l͜͡p͜͡l͜͡u͜͡s͜͡</h2>
+            <ul>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">Home</a></li>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">About</a></li>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500"></a></li>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">Post</a></li>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold text-gray/20 mb-4">SERVICES</h2>
+            <ul>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">Games</a></li>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">Publishing</a></li>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">Solutions</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold text-gray/20 mb-4">EVENTS</h2>
+            <ul>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">CVR</a></li>
+              <li className="mb-2"><a href="#" className="hover:text-orange-500">Game Jams</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold text-gray/20 mb-4">FOLLOW</h2>
+            <div className="flex space-x-4">
+              <a href="#" className="hover:text-cyan-500"><i className="fab fa-twitter"></i></a>
+              <a href="#" className="hover:text-sky-700"><i className="fab fa-facebook-f"></i></a>
+              <a href="#" className="hover:text-red-500"><i className="fab fa-youtube"></i></a>
+              <a href="#" className="hover:text-red-400"><i className="fab fa-pinterest"></i></a>
+              <a href="#" className="hover:text-orange-800"><i className="fab fa-google-plus-g"></i></a>
+              <a href="#" className="hover:text-pink-600"><i className="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
-      )}
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center">
+          <div className="flex justify-center space-x-8 mb-4">
+            <a href="#" className="hover:text-orange-500">TERMS & CONDITIONS</a>
+            <a href="#" className="hover:text-orange-500">PRIVACY POLICY</a>
+            <a href="#" className="hover:text-orange-500">SITEMAP</a>
+          </div>
+          <p>Copyright 2024 © </p>
+          <p>Social Media</p>
+        </div>
+      </div>
     </footer>
   );
 };

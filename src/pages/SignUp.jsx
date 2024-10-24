@@ -53,7 +53,6 @@ const Signup = () => {
 
   return (
     <div className="signup-container">
-      <BasicNavbar />
       {/* <nav className="navbar">
         <div className="logo">
           <img src="/is14Logo.png" alt="Logo" />

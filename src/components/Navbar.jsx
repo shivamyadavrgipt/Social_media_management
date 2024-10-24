@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faChevronDown,
+  faChevronUp,
   faThLarge,
   faPaperPlane,
   faChartLine,
@@ -64,7 +64,7 @@ const Navbar = () => {
   }, [isDarkMode]);
 
   return (
-    <header className={`w-full bg-white shadow-lg z-50 flex justify-between items-center p-4 ${isDarkMode ? 'dark:bg-gray-800' : ''}`}>
+    <header className={` sticky top-0 w-full bg-white shadow-lg z-50 flex justify-between items-center p-4 ${isDarkMode ? 'dark:bg-gray-800' : ''}`}>
       {/* Logo Section */}
       <div className="flex items-center">
         <img
@@ -83,12 +83,16 @@ const Navbar = () => {
 
         {/* Tools Dropdown */}
         <div className="relative">
-          <button className={`text-lg font-medium ${isDarkMode ? 'dark:text-white' : ''}`} onMouseEnter={toggleToolsDropdown}>
-            Tools <FontAwesomeIcon icon={faChevronDown} />
+          <button
+            className={`focus:smooth-auto text-lg font-medium ${isDarkMode ? 'dark:text-white' : ''} group transition-transform`}
+            onMouseEnter={toggleToolsDropdown}
+          >
+            Tools <FontAwesomeIcon icon={faChevronUp} className="transition-transform duration-500 group-hover:rotate-[180deg]" />
           </button>
 
+
           {isToolsDropdownOpen && (
-            <div onMouseLeave={(()=> setIsToolsDropdownOpen(false))} className={`absolute left-0 mt-2 w-80 bg-white shadow-lg z-50 rounded-lg p-6 ${isDarkMode ? 'dark:bg-gray-700' : ''}`}>
+            <div onMouseLeave={(() => setIsToolsDropdownOpen(false))} className={`focus:smooth-auto absolute left-0 mt-2 w-80 bg-white shadow-lg z-50 rounded-lg p-6 ${isDarkMode ? 'dark:bg-gray-700' : ''}`}>
               <div className="grid grid-cols-2 gap-4">
                 <DropdownItem icon={faThLarge} title="Create" description="Build content ideas" />
                 <Link to="/posts" className={`text-lg font-medium flex items-start space-x-2 ${isDarkMode ? 'dark:text-white' : ''}`}>
@@ -121,12 +125,16 @@ const Navbar = () => {
 
         {/* Channels Dropdown */}
         <div className="relative">
-          <button className={`text-lg font-medium ${isDarkMode ? 'dark:text-white' : ''}`}  onMouseEnter={toggleChannelsDropdown}>
-            Channels <FontAwesomeIcon icon={faChevronDown} />
+          <button
+            className={`focus:smooth-auto text-lg font-medium ${isDarkMode ? 'dark:text-white' : ''} group transition-transform`}
+            onMouseEnter={toggleChannelsDropdown}
+          >
+            Channels
+            <FontAwesomeIcon icon={faChevronUp} className="transition-transform duration-500 group-hover:rotate-[180deg] ml-2" />
           </button>
 
           {isChannelsDropdownOpen && (
-            <div onMouseLeave={(()=> setIsChannelsDropdownOpen(false))} className={`absolute left-0 mt-2 z-50 w-80 bg-white shadow-lg rounded-lg p-6 ${isDarkMode ? 'dark:bg-gray-700' : ''}`}>
+            <div onMouseLeave={(() => setIsChannelsDropdownOpen(false))} className={`focus:smooth-auto absolute left-0 mt-2 z-50 w-80 bg-white shadow-lg rounded-lg p-6 ${isDarkMode ? 'dark:bg-gray-700' : ''}`}>
               <div className="grid grid-cols-2 gap-4">
                 <DropdownItem icon={faFacebookF} title="Facebook" />
                 <DropdownItem icon={faInstagram} title="Instagram" />
@@ -157,7 +165,7 @@ const Navbar = () => {
         </div>
 
         {/* Get Started Button */}
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-full">Get started now</button>
+        <Link to="/signup"><button className="bg-blue-600 text-white px-4 py-2 rounded-full">Get started now</button></Link>
 
         {/* Theme Toggle */}
         <button className="h-10 w-10 outline-none border-none rounded-full bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-white ml-4" onClick={toggleTheme}>
