@@ -5,10 +5,10 @@ import "../pages/LandingPage.css";
 const BasicNavbar = () => {
   return (
     <div className="landing-container">
-      <nav className="navbar" id="navbarr">
-        <div className="logo">
+      {/* <nav className="navbar" id="navbarr"> */}
+        {/* <div className="logo">
           <img src="\is14Logo.png" alt="Logo" />
-        </div>
+        </div> */}
         {/* <div className="nav-links">
           <button className="btn-login">Login</button>
           <button className="btn-signup">Sign Up</button>
@@ -25,7 +25,7 @@ const BasicNavbar = () => {
             </Link>
           </div>
         </div>
-      </nav>
+      {/* </nav> */}
     </div>
   );
 };
