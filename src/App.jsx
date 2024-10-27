@@ -10,7 +10,8 @@ import "./App.css";
 import Publish from "./pages/Publish";
 
 // import Footer from "./components/Footer";
-import Settings from "./pages/settings"; // Ensure this path is correct
+import Settings from './pages/settings';
+
 import LandingPage from "./pages/LandingPage"; // Ensure this path is correct
 
 import Signup from "./pages/SignUp";
