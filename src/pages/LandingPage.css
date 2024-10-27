@@ -6,53 +6,33 @@ body {
   }
   
   .landing-container {
-    height: auto;
-    display: flex;
-    border-radius: 5px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f7f7f7;
-  }
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the right end */
+  padding: 0.2rem; /* Adds some spacing around the navbar */
+  /* background-color: #ec2222; */
+  border-radius: 5px;
+  border-radius: 5px;
   
-  .navbar {
-    width: 100%;
-    display: flex;
-    /* justify-content: space-between; */
-    background-color: #4a90e2;
-    max-height:40px;
-  }
+}
 
-  #navbarr{
-    justify-content: space-between;
-  }
+.nav-links {
+  display: flex;
+  gap: 1rem; /* Adds spacing between the buttons */
   
-  .logo img {
-    position: absolute;
-    height: 40px;
-    width: auto;
-    padding-left: 8px;
-  }
-  
-  .nav-links {
-    margin-top: 2px;
-    display: flex;
-    gap: 15px;
-    margin-right: 35px;
-  }
-  
-  .btn-login,
-  .btn-signup,
-  .btn-get-started {
-     padding: 10px 20px; 
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
-  
-  .btn-login {
+}
+
+.btn-login, .btn-signup {
+  width: 110px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #2563eb !important; /* Adjust color as needed */
+  color: white !important;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+  /* .btn-login {
     background-color: white;
     color: #4a90e2;
   }
@@ -60,13 +40,13 @@ body {
   .btn-signup {
     background-color: #ffffff;
     color: #4a90e2;
-  }
+  } */
   
-  .btn-get-started {
+  /* .btn-get-started {
     background-color: #ff5e5e;
     color: white;
     font-size: 18px;
-  }
+  } */
   
   .btn-login:hover,
   .btn-signup:hover,
