@@ -16,6 +16,7 @@ import LandingPage from "./pages/LandingPage"; // Ensure this path is correct
 
 import Signup from "./pages/SignUp";
 import Login from "./pages/Login";
+import Newsletter from "./pages/Newsletter";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/newsletter" element={<Newsletter />} />
         </Routes>
       </div>
     </Router>
