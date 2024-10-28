@@ -10,12 +10,13 @@ import "./App.css";
 import Publish from "./pages/Publish";
 
 // import Footer from "./components/Footer";
-import Settings from "./pages/settings"; // Ensure this path is correct
+import Settings from "./pages/settings";
+
 import LandingPage from "./pages/LandingPage"; // Ensure this path is correct
 
 import Signup from "./pages/SignUp";
-
-
+import Login from "./pages/Login";
+import Newsletter from "./pages/Newsletter";
 
 function App() {
   return (
@@ -23,13 +24,15 @@ function App() {
       <Navbar />
       <div className="body-content">
         <Routes>
-          <Route path="/" element={<LandingPage/>} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/posts" element={<Publish />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/contributors" element={<Contributors />} />
-          <Route path="/settings" element={<Settings/>} />
-          <Route path="/signup" element={< Signup/>} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/newsletter" element={<Newsletter />} />
         </Routes>
       </div>
     </Router>
@@ -37,4 +40,3 @@ function App() {
 }
 
 export default App;
-

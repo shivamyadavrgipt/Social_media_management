@@ -26,4 +26,3 @@ jobs:
           vercel-args: "--prod"  # To deploy to production
           working-directory: ./  # Change if the project is located in a subdirectory
           github-token: ${{ secrets.GITHUB_TOKEN }}  # Optional, for GitHub integration
-
