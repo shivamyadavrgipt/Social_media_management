@@ -16,6 +16,9 @@ export default {
       animation: {
         scroll: 'scroll 30s linear infinite',
       },
+      boxShadow: {
+        custom: '5px 2px 5px 2px rgba(0, 0, 0, 0.6)', // Add your custom box shadow here
+      },
     },
   },
   plugins: [],
