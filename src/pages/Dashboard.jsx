@@ -1,10 +1,9 @@
 import React from 'react';
 import { Line, Bar, Doughnut, Radar, PolarArea } from 'react-chartjs-2';
-import 'chart.js/auto';
-import 'twind/shim';
-import { FiUsers, FiBarChart2, FiMessageCircle, FiHeart } from 'react-icons/fi'; // Icons for stat cards
-import { Tooltip } from 'react-tooltip';// Tooltip library for extra info
+import 'chart.js/auto'; // Automatically imports the necessary chart components
+import 'twind/shim'; // Import Twind for styling
 
+// Sample data for the charts
 const followerGrowthData = {
   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
   datasets: [
@@ -17,6 +16,7 @@ const followerGrowthData = {
     },
   ],
 };
+
 const engagementData = {
   labels: ['Post 1', 'Post 2', 'Post 3'],
   datasets: [
@@ -84,7 +84,6 @@ const activityData = {
     },
   ],
 };
-
 
 function Dashboard() {
   return (
