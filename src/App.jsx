@@ -13,6 +13,9 @@ import Signup from "./pages/SignUp";
 import Login from "./pages/Login";
 import Newsletter from "./pages/Newsletter";
 import Preloader from "./pages/PreLoader";
+import Create from "./pages/Create";
+import Offer from "./pages/Offer";
+import Compare from "./pages/Compare";
 
 function App() {
   // Preloader state
@@ -37,7 +40,10 @@ function App() {
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/create" element={<Create/>} />
               <Route path="/posts" element={<Publish />} />
+              <Route path="/Offer" element={<Offer />} />
+              <Route path="/Compare" element={<Compare />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/contributors" element={<Contributors />} />
               <Route path="/settings" element={<Settings />} />

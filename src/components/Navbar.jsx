@@ -94,7 +94,13 @@ const Navbar = () => {
           {isToolsDropdownOpen && (
             <div onMouseLeave={(() => setIsToolsDropdownOpen(false))} className={`focus:smooth-auto absolute left-0 mt-2 w-80 bg-white shadow-lg z-50 rounded-lg p-6 ${isDarkMode ? 'dark:bg-gray-700' : ''}`}>
               <div className="grid grid-cols-2 gap-4">
-                <DropdownItem icon={faThLarge} title="Create" description="Build content ideas" />
+                <Link to="/create" className={`text-lg font-medium flex items-start space-x-2 ${isDarkMode ? 'dark:text-white' : ''}`}>
+                  <FontAwesomeIcon icon={faThLarge} />
+                  <div>
+                    <div className="font-semibold">Create</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Build content ideas</div>
+                  </div>
+                </Link>
                 <Link to="/posts" className={`text-lg font-medium flex items-start space-x-2 ${isDarkMode ? 'dark:text-white' : ''}`}>
                   <FontAwesomeIcon icon={faPaperPlane} />
                   <div>
