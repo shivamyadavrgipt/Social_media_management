@@ -1,83 +1,136 @@
 /* Contributors.css */
 
-.contributors {
-  width: 90%;
-  margin: 0 auto;
-  background: var(--seashell);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
+/* Global Styles */
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.container {
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.contributors h2 {
-  color: var(--sonic-silver);
-  text-align: center;
-  margin-bottom: 20px;
-}
+/* Title Styles */
 
-.contributor-cards {
+
+/* Contributors Grid */
+.contributors-grid {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
 }
 
-.contributor-member {
-  color: var(--sonic-silver);
-  text-align: center;
-  background-color: var(--seashell);
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgb(240, 239, 239);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 250px;
-  margin: 10px;
-  flex: 1 1 calc(33.333% - 40px);
+
+.contributor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.contributor-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center items horizontally */
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px; /* or your desired width */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.contributor-member:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgb(226, 206, 24);
-}
-
-.contributor-member img {
-  width: 100px;
-  height: 100px;
+.contributor-card img {
+  width: 100px; /* Adjust the size if needed */
+  height: 100px; /* Adjust the size if needed */
   border-radius: 50%;
-  margin-bottom: 10px;
+  border: 3px solid #f689f2; /* If you want a border */
+  margin-bottom: 10px; /* Space below the image */
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
-.contributor-member h3 {
-  font-size: 1rem;
+
+/* Contributor Name and Contributions */
+.contributor-card h2 {
+  font-size: 1.25rem;
+  color: #333;
   margin: 10px 0 5px;
 }
 
-.contributor-member p {
-  font-size: 0.9rem;
-  margin: 0;
+.contributor-card p {
+  color: #666;
 }
 
-.contributor-member button {
-  background-color: transparent;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 5px 20px;
-  font-size: 1.1rem;
-  color: var(--sonic-silver);
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.contributor-member button:hover {
-  background: orange;
+/* Scroll to Top Button */
+.top-btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f689f2;
   color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
 }
 
+.top-btn:hover {
+  background-color: #d16bb0;
+}
+
+/* Toggle Switch */
+.toggle {
+  display: none; /* Hide the default checkbox */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #f5c0bb;
+}
+
+body.dark-mode .contributor-card {
+  background: #444;
+  color: #f5c0bb;
+}
+
+body.dark-mode .contributor-card h2,
+body.dark-mode .contributor-card p {
+  color: #f5c0bb;
+}
+
+body.dark-mode .top-btn {
+  background-color: #f689f2;
+   color: #fff;
+}
+
+body.dark-mode .top-btn:hover {
+  background-color: #fcfbfc;
+   color: #fff;
+}
+body.dark-mode h2.title {
+  color: white !important; /* Without !important */
+}
+body.dark-mode title1 {
+  color: white !important; /* Without !important */
+}
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #a3a2a2; /* Default text color */
+}
+
+/* Dark Mode Styles */
+body.dark-mode .title {
+  color: white !important; /* Change title text color to white in dark mode */
+}
 .pagination {
   display: flex;
   justify-content: center;
@@ -85,14 +138,22 @@
 }
 
 .pagination button {
-  color: var(--old-rose);
-  margin: 0 5px;
+  margin: 0 10px;
   padding: 10px 15px;
-  background-color: transparent;
+  background-color: #f689f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.pagination button.active {
-  text-decoration: underline;
-  font-size: large;
+.pagination button:disabled {
+  background-color: #8e8c8c;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  align-self: center;
+  margin: 0 10px;
+  font-weight: bold;
 }
