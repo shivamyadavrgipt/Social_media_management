@@ -1,3 +1,6 @@
+# Social Media Management Account Frontend
+Welcome to the Social Media Management Account Frontend! This is a React application styled with Tailwind CSS for managing multiple social media accounts. The application is designed to simplify social media management by providing an intuitive interface.
+
 ## ⭐️ Show Your Support
 If you find this project valuable or appreciate the work, please consider starring the repository on [GitHub](https://github.com/shivamyadavrgipt). Your support helps increase its visibility and encourages further development. Thank you!
 <div align="center">
@@ -20,8 +23,15 @@ If you find this project valuable or appreciate the work, please consider starri
   </p>
 </div>
 
-# Social Media Management Account Frontend
-Welcome to the Social Media Management Account Frontend! This is a React application styled with Tailwind CSS for managing multiple social media accounts. The application is designed to simplify social media management by providing an intuitive interface.
+
+## This project is OFFICIALLY accepted for
+
+<div align="center">
+  <img src="https://github.com/neeru24/Connect_icons/blob/main/hacktober.png" alt="Hacktoberfest 2024" width="80%">
+</div>
+<br>
+
+   ![image](https://github.com/user-attachments/assets/5263dc32-ce09-4835-b964-7f996e970eb5)
 
 # 🌐 Live Demo
 Check out the live deployment https://social-media-management-eight.vercel.app/
@@ -76,6 +86,26 @@ We welcome contributions! Here's how you can help:
 - Push to the branch: git push origin feature-branch-name.
 - Create a pull request.
 - Please follow our Contributing Guidelines (if available) and make sure your changes adhere to the project's coding standards.
+
+## 💗 Contributors
+A big thank you to all the contributors! 🎉  
+
+<a href="https://github.com/shivamyadavrgipt/Social_media_management/pulse"> <img align="center" src="https://contrib.rocks/image?max=100&repo=shivamyadavrgipt/Social_media_management" /> </a> 
+
+---
+## Stargazers ❤️
+
+<div align='left'>
+
+[![Stargazers repo roster for shivamyadavrgipt/Social_media_management](https://reporoster.com/stars/shivamyadavrgipt/Social_media_management)](https://github.com/shivamyadavrgipt/Social_media_management/stargazers)
+
+</div>
+
+## Forkers ❤️
+
+[![Forkers repo roster for shivamyadavrgipt/Social_media_management](https://reporoster.com/forks/shivamyadavrgipt/Social_media_management)](https://github.com/shivamyadavrgipt/Social_media_management/network/members)
+
+---  
 
 # 📝 License
 This project is open-source under the MIT License. Feel free to use, modify, and distribute this project.
