@@ -7,3 +7,9 @@ body.dark {
   background-color: #1a202c; /* Dark background */
   color: #f7fafc; /* Light text color */
 }
+body.dark-mode .title {
+  color: white !important; /* Change title text color to white in dark mode */
+}
+body.dark-mode h1.title {
+  color: white; /* Without !important */
+}
