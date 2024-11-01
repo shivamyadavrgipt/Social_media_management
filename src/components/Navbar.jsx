@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronUp,
   faThLarge,
   faPaperPlane,
   faChartLine,
@@ -10,6 +9,7 @@ import {
   faMoon,
   faFileAlt,
   faLightbulb,
+  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -20,7 +20,7 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import { Search } from "@mui/icons-material";
+import { Height, Search } from "@mui/icons-material";
 
 // Dropdown item component
 const DropdownItem = ({ icon, title, description }) => (
@@ -50,6 +50,24 @@ const NavMenu = ({ isDarkMode, showSearchBar }) => {
     setIsChannelsDropdownOpen(!isChannelsDropdownOpen);
     setIsToolsDropdownOpen(false); // Close tools dropdown when channels dropdown opens
   };
+
+  // We Only Re-rotate icons back to original, when cursor leaves both button and dropdown
+  useEffect(() => {
+    if(isToolsDropdownOpen) {
+      document.getElementById('toolsIcon').classList.add('rotate-[180deg]')
+    }
+    else {
+      document.getElementById('toolsIcon').classList.remove('rotate-[180deg]')
+    }
+
+    if(isChannelsDropdownOpen) {
+      document.getElementById('channelIcon').classList.add('rotate-[180deg]')
+    }
+    else {
+      document.getElementById('channelIcon').classList.remove('rotate-[180deg]')
+    }
+  }, [isToolsDropdownOpen, isChannelsDropdownOpen])
+
   return (
     <>
       <button
@@ -85,20 +103,22 @@ const NavMenu = ({ isDarkMode, showSearchBar }) => {
           isDarkMode ? "bg-gray-800 text-white" : "bg-white   text-black"
         } `}
       >
-        <Link to="/dashboard" className="text-lg font-medium ">
+        <Link to="/dashboard" className="text-lg font-medium hover:text-blue-400 transition-colors duration-250">
           Dashboard
         </Link>
 
         {/* Tools Dropdown */}
         <div>
           <button
-            className="focus:smooth-auto text-lg font-medium  group transition-transform"
+            className="focus:smooth-auto text-lg font-medium group transition-transform hover:text-blue-400 transition-colors duration-250"
             onMouseEnter={toggleToolsDropdown}
           >
             Tools{" "}
             <FontAwesomeIcon
-              icon={faChevronUp}
+              icon={faChevronDown}
               className="transition-transform duration-500 group-hover:rotate-[180deg]"
+              size="2xs"
+              id="toolsIcon"
             />
           </button>
 
@@ -170,13 +190,15 @@ const NavMenu = ({ isDarkMode, showSearchBar }) => {
         <div className="relative">
           <button
             className="focus:smooth-auto text-lg font-medium 
-             group transition-transform"
+             group transition-transform hover:text-blue-400 transition-colors duration-250"
             onMouseEnter={toggleChannelsDropdown}
           >
             Channels
             <FontAwesomeIcon
-              icon={faChevronUp}
+              icon={faChevronDown}
               className="transition-transform duration-500 group-hover:rotate-[180deg] ml-2"
+              size="2xs"
+              id="channelIcon"
             />
           </button>
 
@@ -200,7 +222,7 @@ const NavMenu = ({ isDarkMode, showSearchBar }) => {
         </div>
 
         {/* Other Links */}
-        <Link to="/settings" className="text-lg font-medium">
+        <Link to="/settings" className="text-lg font-medium hover:text-blue-400 transition-colors duration-250">
           Settings
         </Link>
         {/* Get Started Button */}
