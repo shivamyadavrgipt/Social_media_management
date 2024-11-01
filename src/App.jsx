@@ -44,6 +44,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element={<Login />} />
               <Route path="/newsletter" element={<Newsletter />} />
+              <Route path="*" element={<h1>404, Page Not Exist!!!</h1>} />
             </Routes>
           </div>
         </Router>
