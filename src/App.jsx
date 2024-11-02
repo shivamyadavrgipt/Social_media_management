@@ -13,6 +13,7 @@ import Signup from "./pages/SignUp";
 import Login from "./pages/Login";
 import Newsletter from "./pages/Newsletter";
 import Preloader from "./pages/PreLoader";
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   // Preloader state
@@ -44,6 +45,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element={<Login />} />
               <Route path="/newsletter" element={<Newsletter />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </div>
         </Router>
