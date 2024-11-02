@@ -1,6 +1,7 @@
 // App.jsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Helmet } from "react-helmet"; 
 import Dashboard from "./pages/Dashboard";
 import Analytics from "./pages/Analytics";
 import Navbar from "./components/Navbar";
@@ -32,6 +33,37 @@ function App() {
         <Preloader />
       ) : (
         <Router>
+          <Helmet>
+            <title>Social Media Management System</title>
+            <meta
+              name="description"
+              content="Manage multiple social media accounts in one place. Analyze user interactions and post responses easily."
+            />
+            <meta name="keywords" content="social media, management, analytics, user interactions" />
+            <meta name="author" content="Your Name" />
+
+            <meta property="og:title" content="Social Media Management System" />
+            <meta
+              property="og:description"
+              content="A comprehensive platform to manage and analyze your social media presence."
+            />
+            <meta property="og:image" content="https://social-media-management-djkz.vercel.app/og-image.jpg" />
+            <meta property="og:url" content="https://social-media-management-djkz.vercel.app" />
+            <meta property="og:type" content="website" />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="Social Media Management System" />
+            <meta
+              name="twitter:description"
+              content="Manage your social media accounts from one place and analyze user interactions."
+            />
+            <meta name="twitter:image" content="https://social-media-management-djkz.vercel.app/og-image.jpg" />
+
+            <meta name="robots" content="index, follow" />
+
+            <link rel="canonical" href="https://social-media-management-djkz.vercel.app" />
+          </Helmet>
+
           <Navbar />
           <div className="body-content">
             <Routes>
