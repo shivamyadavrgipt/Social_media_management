@@ -1,0 +1,101 @@
+/* Container */
+.settings-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Sidebar */
+  .settings-sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .settings-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .settings-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .settings-menu-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .settings-menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .settings-menu-item.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Main Content */
+  .settings-content {
+    width: 75%;
+    padding: 30px;
+  }
+  
+  .settings-section {
+    max-width: 600px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .settings-field {
+    margin-bottom: 15px;
+  }
+  
+  .settings-field label {
+    display: block;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .settings-field input[type="text"],
+  .settings-field input[type="email"],
+  .settings-field input[type="password"],
+  .settings-field input[type="tel"],
+  .settings-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .settings-field input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .settings-field button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .settings-field button:hover {
+    background-color: #0056b3;
+  }
+  
