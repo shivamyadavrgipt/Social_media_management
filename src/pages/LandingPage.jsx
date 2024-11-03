@@ -52,7 +52,7 @@ const LandingPage = () => {
   const repeatedStats = Array(10).fill(stats).flat();
 
   return (
-    <div className="h-screen overflow-y-scroll ">
+    <div className="h-screen ">
       {/* Main Section */}
       <div className="flex flex-col gap-6 md:flex-row items-center justify-between p-8 md:p-16 bg-white/20">
         <div className="md:w-1/2">
