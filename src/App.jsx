@@ -15,6 +15,7 @@ import Login from "./pages/Login";
 import Newsletter from "./pages/Newsletter";
 import Preloader from "./pages/PreLoader";
 import NotFoundPage from './pages/NotFoundPage';
+import TopButton from "./components/TopButton";
 
 function App() {
   // Preloader state
@@ -80,6 +81,7 @@ function App() {
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </div>
+          <TopButton/>
         </Router>
       )}
     </div>
