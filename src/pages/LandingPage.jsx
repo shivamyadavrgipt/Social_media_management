@@ -52,8 +52,6 @@ const LandingPage = () => {
   const repeatedStats = Array(10).fill(stats).flat();
 
   return (
-
-    <div>
     <div className="h-screen ">
 
       {/* Main Section */}
