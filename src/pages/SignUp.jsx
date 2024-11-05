@@ -28,9 +28,11 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post(
-       
-        { name, username, email, password }
+      const response = await axios.post("http://localhost:5000/api/users/signup", {
+        username,
+        email,
+        password
+      }
       );
 
       if (response.data.success) {
@@ -41,12 +43,9 @@ const Signup = () => {
         setError(response.data.message);
       }
     } catch (err) {
+      console.log(err)
       setError("Signup failed. Please try again.");
     }
-  };
-
-  const toggleAccount = () => {
-    setAccount((prevAccount) => (prevAccount === "signup" ? "login" : "signup"));
   };
 
   return (
@@ -57,98 +56,67 @@ const Signup = () => {
           alt="logo"
           className="w-24 mx-auto mb-4 rounded-full "
         />
-        {account === "signup" ? (
-          <>
-            <h2 className="text-2xl font-bold text-center mb-4">Create Your Account</h2>
-            {error && <p className="text-red-500 text-center">{error}</p>}
-            <form onSubmit={handleSubmit} className="flex flex-col">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={formData.name}
-                onChange={handleChange}
-                className="p-2 mb-3 border text-gray-500 outline-none bg-gray-200  rounded-full"
-                required
-              />
-              <input
-                type="text"
-                name="username"
-                placeholder="Username"
-                value={formData.username}
-                onChange={handleChange}
-                className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
-                required
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                value={formData.password}
-                onChange={handleChange}
-                className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
-                required
-              />
-              <input
-                type="password"
-                name="confirmPassword"
-                placeholder="Confirm Password"
-                value={formData.confirmPassword}
-                onChange={handleChange}
-                className="p-2 mb-4 border bg-gray-200  rounded-full text-gray-500 outline-none"
-                required
-              />
-              <button type="submit" className="bg-orange-500 text-white py-2 rounded">
-                Sign Up
-              </button>
-            </form>
-            <p className="text-center mt-4 text-green-500">
-              Already have an account?{" "}
-              <span className="text-blue-500 cursor-pointer" onClick={toggleAccount}>
-                Login
-              </span>
-            </p>
-          </>
-        ) : (
-          <>
-            <h2 className="text-gray/20 text-2xl font-bold text-center mb-4">Login to Your Account</h2>
-            {error && <p className="text-red-500 text-center">{error}</p>}
-            <form className="flex flex-col">
-              <input
-                type="text"
-                name="username"
-                placeholder="Username"
-                className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
-                required
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                className="p-2 mb-4 border bg-gray-200 rounded-full text-gray-500 outline-none"
-                required
-              />
-              <button type="submit" className="bg-orange-500 text-white py-2 rounded">
-                Login
-              </button>
-            </form>
-            <p className="text-center mt-4 text-green-500">
-              Don’t have an account?{" "}
-              <span className="text-blue-500 cursor-pointer" onClick={toggleAccount}>
-                Sign Up
-              </span>
-            </p>
-          </>
-        )}
+        <>
+          <h2 className="text-2xl font-bold text-center mb-4">Create Your Account</h2>
+          {error && <p className="text-red-500 text-center">{error}</p>}
+          <form onSubmit={handleSubmit} className="flex flex-col">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              className="p-2 mb-3 border text-gray-500 outline-none bg-gray-200  rounded-full"
+              required
+            />
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              value={formData.username}
+              onChange={handleChange}
+              className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
+              required
+            />
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              className="p-2 mb-4 border bg-gray-200  rounded-full text-gray-500 outline-none"
+              required
+            />
+            <button type="submit" className="bg-orange-500 text-white py-2 rounded">
+              Sign Up
+            </button>
+          </form>
+          <p className="text-center mt-4 text-green-500">
+            Already have an account?{" "}
+            <span className="text-blue-500 cursor-pointer" 
+                  onClick={() => navigate("/login")}>
+              Login
+            </span>
+          </p>
+        </>
       </div>
     </div>
   );
