@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-black/10 text-slate-500 dark:text-slate-400 py-10">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between">
+        <div className="flex flex-col justify-between break-words md:flex-row">
           <div className="flex ">
 
             <img
