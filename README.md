@@ -34,7 +34,7 @@ If you find this project valuable or appreciate the work, please consider starri
    ![image](https://github.com/user-attachments/assets/5263dc32-ce09-4835-b964-7f996e970eb5)
 
 # 🌐 Live Demo
-Check out the live deployment https://social-media-management-eight.vercel.app/
+Check out the live deployment https://social-media-management-djkz.vercel.app
 # ✨ Features
 - 📱 Responsive UI - Optimized for both desktop and mobile devices using Tailwind CSS.
 - 🚀 Fast and Lightweight - Built with React and Tailwind for a minimal and optimized experience.

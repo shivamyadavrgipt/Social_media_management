@@ -13,9 +13,14 @@ import Signup from "./pages/SignUp";
 import Login from "./pages/Login";
 import Newsletter from "./pages/Newsletter";
 import Preloader from "./pages/PreLoader";
+
 import Create from "./pages/Create";
 import Offer from "./pages/Offer";
 import Compare from "./pages/Compare";
+
+import NotFoundPage from './pages/NotFoundPage';
+import TopButton from "./components/TopButton";
+
 
 function App() {
   // Preloader state
@@ -52,6 +57,7 @@ function App() {
               <Route path="/newsletter" element={<Newsletter />} />
             </Routes>
           </div>
+          <TopButton/>
         </Router>
       )}
     </div>
