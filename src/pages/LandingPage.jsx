@@ -3,7 +3,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
-
 const LandingPage = () => {
   const stats = [
     {
@@ -52,124 +51,112 @@ const LandingPage = () => {
   const repeatedStats = Array(10).fill(stats).flat();
 
   return (
-
     <div>
-    <div className="h-screen ">
-
-      {/* Main Section */}
-      <div className="flex flex-col gap-6 md:flex-row items-center justify-between p-8 md:p-16 bg-white/20">
-        <div className="md:w-1/2">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Grow your audience on social and beyond
-          </h1>
-          <p className="text-lg text-slate-500 dark:text-slate-400 mb-8">
-            Socialplus helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.
-          </p>
-          <div className="mb-4">
-            
-            <Link to="/signup">
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-full">
-        Do you want to Start
-        </button>
-      </Link>
-
+      <div className="h-screen ">
+        {/* Main Section */}
+        <div className="flex flex-col gap-6 md:flex-row items-center justify-between p-8 md:p-16 bg-white/20">
+          <div className="md:w-1/2">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Grow your audience on social and beyond
+            </h1>
+            <p className="text-lg text-slate-500 dark:text-slate-400 mb-8">
+              Socialplus helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.
+            </p>
+            <div className="mb-4">
+              <Link to="/signup">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded-full">
+                  Do you want to Start
+                </button>
+              </Link>
+            </div>
+            <div className="flex items-center text-sm text-slate-500 dark:text-slate-400">
+              <i className="fas fa-check-circle text-blue-600 mr-2"></i> Try for free
+              <i className="fas fa-check-circle text-blue-600 mx-2"></i> No credit card required
+              <i className="fas fa-check-circle text-blue-600 mx-2"></i> Cancel anytime
+            </div>
           </div>
-          <div className="flex items-center text-sm text-slate-500 dark:text-slate-400">
-            <i className="fas fa-check-circle text-blue-600 mr-2"></i> Try for free
-            <i className="fas fa-check-circle text-blue-600 mx-2"></i> No credit card required
-            <i className="fas fa-check-circle text-blue-600 mx-2"></i> Cancel anytime
+          <div className="md:w-1/2 mt-8 md:mt-0 relative">
+            <img
+              src="https://buffer.com/static/homepage/webp/hero-2.webp"
+              alt="Dashboard with social media icons and analytics"
+              className="rounded-lg shadow-lg"
+            />
           </div>
         </div>
-        <div className="md:w-1/2 mt-8 md:mt-0 relative">
-          <img
-            src="https://buffer.com/static/homepage/webp/hero-2.webp"
-            alt="Dashboard with social media icons and analytics"
-            className="rounded-lg  shadow-lg"
-          />
-        </div>
-      </div>
 
-      {/* Infinite Automatic Scrollable Statistics Section */}
-      <div className="relative w-full overflow-hidden bg-white/20 py-8">
-        {/* Scrollable div with Tailwind scroll animation */}
-        <div className="flex space-x-4 animate-scroll">
-          {repeatedStats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white/20 shadow-md rounded-lg p-6 flex flex-col items-center min-w-[250px]"
-            >
-              <div className="text-2xl font-bold mb-2">
-                {stat.value} <span className="text-green-500">▲</span>
-              </div>
-              <div className="text-slate-500 dark:text-slate-400 mb-4">{stat.description}</div>
-              <div className="flex items-center">
-                <img
-                  src={stat.image}
-                  alt={stat.alt}
-                  className="w-10 h-10 rounded-full mr-2"
-                />
+        {/* Infinite Automatic Scrollable Statistics Section */}
+        <div className="relative w-full overflow-hidden bg-white/20 py-8">
+          {/* Scrollable div with Tailwind scroll animation */}
+          <div className="flex space-x-4 animate-scroll">
+            {repeatedStats.map((stat, index) => (
+              <div
+                key={index}
+                className="bg-white/20 shadow-md rounded-lg p-6 flex flex-col items-center min-w-[250px]"
+              >
+                <div className="text-2xl font-bold mb-2">
+                  {stat.value} <span className="text-green-500">▲</span>
+                </div>
+                <div className="text-slate-500 dark:text-slate-400 mb-4">{stat.description}</div>
                 <div className="flex items-center">
-                  <i className={`${stat.icon} text-blue-600 mr-1`}></i>
-                  <span className="text-gray-800">{stat.name}</span>
+                  <img
+                    src={stat.image}
+                    alt={stat.alt}
+                    className="w-10 h-10 rounded-full mr-2"
+                  />
+                  <div className="flex items-center">
+                    <i className={`${stat.icon} text-blue-600 mr-1`}></i>
+                    <span className="text-gray-800">{stat.name}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-
-
-
-
-
-      <div className="flex flex-col gap-6 md:flex-row items-center justify-between p-8 md:p-16 bg-white/20">
-        <div className="md:w-1/2 mt-8 md:mt-0 relative">
-          <img
-            src="https://media.sproutsocial.com/uploads/2023/03/What-is-social-media-management-everything-you-need-to-know-Final-1.svg"
-            alt="Dashboard with social media icons and analytics"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="md:w-1/2">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Grow your audience on social and beyond
-          </h1>
-          <p className="text-lg text-slate-500 dark:text-slate-400 mb-8">
-            Socialplus helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.
-          </p>
-
-        </div>
-      </div>
-
-
-
-      <div className="flex flex-col gap-6 md:flex-row items-center justify-between p-8 md:p-16 bg-white/20">
-        <div className="md:w-1/2">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            And we are here to help
-          </h1>
-          <p className="text-lg text-slate-500 dark:text-slate-400 mb-8">
-            Our customer advocates are standing by 24/7 to support you via email and social media. We also have a comprehensive, regularly updated help center for those who prefer to find help themselves.
-          </p>
-          <div className="flex gap-3 items-center mb-4">
-            <button className="px-6 py-3 border border-blue-500 text-blue-500 rounded-full hover:bg-blue-50">
-              Visit our help center
-            </button>
+            ))}
           </div>
         </div>
-        <div className="md:w-1/2 mt-8 md:mt-0 relative">
-          <img
-            src="https://buffer.com/_next/image?url=%2Fstatic%2Fhomepage%2Fwebp%2Fteam-map.webp&w=1920&q=75"
-            alt="Dashboard with social media icons and analytics"
-            className="rounded-lg shadow-lg"
-          />
+
+        {/* Additional Sections */}
+        <div className="flex flex-col gap-6 md:flex-row items-center justify-between p-8 md:p-16 bg-white/20">
+          <div className="md:w-1/2 mt-8 md:mt-0 relative">
+            <img
+              src="https://media.sproutsocial.com/uploads/2023/03/What-is-social-media-management-everything-you-need-to-know-Final-1.svg"
+              alt="Dashboard with social media icons and analytics"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Grow your audience on social and beyond
+            </h1>
+            <p className="text-lg text-slate-500 dark:text-slate-400 mb-8">
+              Socialplus helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.
+            </p>
+          </div>
         </div>
+
+        <div className="flex flex-col gap-6 md:flex-row items-center justify-between p-8 md:p-16 bg-white/20">
+          <div className="md:w-1/2">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              And we are here to help
+            </h1>
+            <p className="text-lg text-slate-500 dark:text-slate-400 mb-8">
+              Our customer advocates are standing by 24/7 to support you via email and social media. We also have a comprehensive, regularly updated help center for those who prefer to find help themselves.
+            </p>
+            <div className="flex gap-3 items-center mb-4">
+              <button className="px-6 py-3 border border-blue-500 text-blue-500 rounded-full hover:bg-blue-50">
+                Visit our help center
+              </button>
+            </div>
+          </div>
+          <div className="md:w-1/2 mt-8 md:mt-0 relative">
+            <img
+              src="https://buffer.com/_next/image?url=%2Fstatic%2Fhomepage%2Fwebp%2Fteam-map.webp&w=1920&q=75"
+              alt="Dashboard with social media icons and analytics"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+
+        <Footer />
       </div>
-
-
-      <Footer />
-
     </div>
   );
 };

@@ -228,7 +228,7 @@ const NavMenu = ({ isDarkMode, showSearchBar }) => {
         {/* Get Started Button */}
         <Link to="/signup" className="md:hidden">
           <button className=" bg-blue-600 text-white px-4 py-2 rounded-full">
-            Get started now {">>"}
+            Signup/Login {">>"}
           </button>
         </Link>
       </nav>
@@ -337,7 +337,7 @@ const Navbar = () => {
           {/* Get Started Button */}
           <Link to="/signup" className="hidden md:block">
             <button className="bg-blue-600 text-white px-4 py-2 rounded-full">
-              Get started now
+            Signup/Login
             </button>
           </Link>
 
