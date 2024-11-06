@@ -1,8 +1,7 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
-
+import BasicNavbar from '../components/BasicNavbar';
 
 const LandingPage = () => {
   const stats = [
@@ -52,10 +51,7 @@ const LandingPage = () => {
   const repeatedStats = Array(10).fill(stats).flat();
 
   return (
-
-    <div>
-    <div className="h-screen ">
-
+    <div className="h-screen overflow-y-scroll ">
       {/* Main Section */}
       <div className="flex flex-col gap-6 md:flex-row items-center justify-between p-8 md:p-16 bg-white/20">
         <div className="md:w-1/2">
@@ -65,13 +61,15 @@ const LandingPage = () => {
           <p className="text-lg text-slate-500 dark:text-slate-400 mb-8">
             Socialplus helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.
           </p>
-          <div className="mb-4">
-            
-            <Link to="/signup">
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-full">
-        Do you want to Start
-        </button>
-      </Link>
+          <div className="flex gap-3  items-center mb-4">
+            <input
+              type="email"
+              placeholder="Enter your email..."
+              className="p-4 border border-gray-300 text-sm text-slate-500 rounded-full w-2/3 md:w-1/2 focus:outline-none"
+            />
+            <button className="p-4 bg-blue-600 text-white rounded-full w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4">
+              Get started now
+            </button>
 
           </div>
           <div className="flex items-center text-sm text-slate-500 dark:text-slate-400">
