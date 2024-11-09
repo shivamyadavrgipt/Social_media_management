@@ -24,7 +24,7 @@ const LandingPage = () => {
     {
       value: "60 hrs",
       description: "Saved per month",
-      image: "https://cdn3.pixelcut.app/1/3/profile_picture_1728ecf2bd.jpg",
+      image: "https://img.freepik.com/premium-vector/letter-v-logo-design-template-vector-illustration_994237-191.jpg",
       alt: "velocity juice logo",
       name: "velocity juice",
       icon: "fab fa-linkedin"
