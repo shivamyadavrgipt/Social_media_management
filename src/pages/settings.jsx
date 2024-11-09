@@ -150,6 +150,7 @@ export default function Settings() {
               <input type="checkbox" /> Enable high contrast mode
             </div>
           </div>
+          
         )}
       </div>
     </div>

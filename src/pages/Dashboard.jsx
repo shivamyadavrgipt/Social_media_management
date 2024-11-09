@@ -3,6 +3,7 @@ import React from "react";
 import { Line, Bar, Doughnut, Radar, PolarArea } from "react-chartjs-2";
 import { FiUsers, FiBarChart2, FiHeart, FiMessageCircle } from "react-icons/fi";
 import { Tooltip } from "react-tooltip";
+import Footer from '../components/Footer';
 import "react-tooltip/dist/react-tooltip.css";
 import {
   Chart as ChartJS,
@@ -267,6 +268,15 @@ const Dashboard = () => {
       </div>
 
       <Tooltip id="dashboard-tooltip" />
+      <div className="border-t border-black mt-10 pt-6 text-center">
+          <div className="flex justify-center space-x-8 mb-4">
+            <a href="#" className="hover:text-orange-500">TERMS & CONDITIONS</a>
+            <a href="#" className="hover:text-orange-500">PRIVACY POLICY</a>
+            <a href="#" className="hover:text-orange-500">SITEMAP</a>
+          </div>
+          <p>Copyright 2024 © </p>
+          <p>Social Media</p>
+        </div>
     </div>
   );
 };
