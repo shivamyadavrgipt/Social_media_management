@@ -18,6 +18,7 @@ import Newsletter from "./pages/Newsletter";
 import Preloader from "./pages/PreLoader";
 import NotFoundPage from './pages/NotFoundPage';
 import TopButton from "./components/TopButton";
+import faq from "./components/faq";
 
 function App() {
   // Preloader state
@@ -81,6 +82,7 @@ function App() {
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </div>
+            <faq/>
             <TopButton/>
           </Router>
         </GoogleOAuthProvider>
