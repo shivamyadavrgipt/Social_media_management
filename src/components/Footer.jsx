@@ -20,7 +20,7 @@ const Footer = () => {
             <ul>
               <li className="mb-2"><a href="#" className="hover:text-orange-500">Home</a></li>
               <li className="mb-2"><a href="#" className="hover:text-orange-500">About</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-orange-500"></a></li>
+              <li className="mb-2"><a href="faq.jsx" className="hover:text-orange-500">FAQ's</a></li>
               <li className="mb-2"><a href="#" className="hover:text-orange-500">Post</a></li>
               <li className="mb-2"><a href="#" className="hover:text-orange-500">Contact</a></li>
             </ul>

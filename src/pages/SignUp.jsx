@@ -1,9 +1,10 @@
+// Signup.jsx
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios"; // For API calls
+import { GoogleLogin } from '@react-oauth/google'; // Import GoogleLogin
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Signup = () => {
-  const [account, setAccount] = useState("signup"); // Toggle between signup and login
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
@@ -32,29 +33,46 @@ const Signup = () => {
         username,
         email,
         password
-      }
-      );
+      });
 
       if (response.data.success) {
         setError("");
-        // Navigate to the login page after a successful signup
         navigate("/login");
       } else {
         setError(response.data.message);
       }
     } catch (err) {
-      console.log(err)
+      console.log(err);
       setError("Signup failed. Please try again.");
     }
   };
 
+  // Google Sign-In Handler
+  const handleGoogleSignIn = async (credentialResponse) => {
+    try {
+      const response = await axios.post("http://localhost:5000/api/users/google-signin", {
+        token: credentialResponse.credential,
+      });
+
+      if (response.data.success) {
+        setError("");
+        navigate("/"); // Navigate to home or dashboard
+      } else {
+        setError(response.data.message);
+      }
+    } catch (err) {
+      console.log(err);
+      setError("Google Sign-In failed. Please try again.");
+    }
+  };
+
   return (
-    <div className=" flex justify-center items-center mt-24 bg-gray/20">
+    <div className="flex justify-center items-center mt-24 bg-gray/20">
       <div className="bg-white/20 p-6 rounded-lg shadow-custom w-96">
         <img
           src="https://cdn-icons-gif.flaticon.com/7211/7211809.gif"
           alt="logo"
-          className="w-24 mx-auto mb-4 rounded-full "
+          className="w-24 mx-auto mb-4 rounded-full"
         />
         <>
           <h2 className="text-2xl font-bold text-center mb-4">Create Your Account</h2>
@@ -66,7 +84,7 @@ const Signup = () => {
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
-              className="p-2 mb-3 border text-gray-500 outline-none bg-gray-200  rounded-full"
+              className="p-2 mb-3 border text-gray-500 outline-none bg-gray-200 rounded-full"
               required
             />
             <input
@@ -75,7 +93,7 @@ const Signup = () => {
               placeholder="Username"
               value={formData.username}
               onChange={handleChange}
-              className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
+              className="p-2 mb-3 border bg-gray-200 rounded-full text-gray-500 outline-none"
               required
             />
             <input
@@ -84,7 +102,7 @@ const Signup = () => {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
+              className="p-2 mb-3 border bg-gray-200 rounded-full text-gray-500 outline-none"
               required
             />
             <input
@@ -93,7 +111,7 @@ const Signup = () => {
               placeholder="Password"
               value={formData.password}
               onChange={handleChange}
-              className="p-2 mb-3 border bg-gray-200  rounded-full text-gray-500 outline-none"
+              className="p-2 mb-3 border bg-gray-200 rounded-full text-gray-500 outline-none"
               required
             />
             <input
@@ -102,17 +120,26 @@ const Signup = () => {
               placeholder="Confirm Password"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="p-2 mb-4 border bg-gray-200  rounded-full text-gray-500 outline-none"
+              className="p-2 mb-4 border bg-gray-200 rounded-full text-gray-500 outline-none"
               required
             />
             <button type="submit" className="bg-orange-500 text-white py-2 rounded">
               Sign Up
             </button>
           </form>
+
+          {/* Add Google Sign-In Button here */}
+          <div className="flex justify-center mt-4">
+            <GoogleLogin
+              onSuccess={handleGoogleSignIn} // Google Sign-In success handler
+              onError={() => setError("Google Sign-In failed.")} // Error handler
+              className="bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600"
+            />
+          </div>
+
           <p className="text-center mt-4 text-green-500">
             Already have an account?{" "}
-            <span className="text-blue-500 cursor-pointer" 
-                  onClick={() => navigate("/login")}>
+            <span className="text-blue-500 cursor-pointer" onClick={() => navigate("/login")}>
               Login
             </span>
           </p>
